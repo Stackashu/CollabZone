@@ -1,10 +1,11 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const Landing = () => {
   return (
-    <div>
-      Landing
-    </div>
+  <div>
+    <Navbar/>
+  </div>
   )
 }
 

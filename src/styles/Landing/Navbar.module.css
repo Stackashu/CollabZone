@@ -1,0 +1,77 @@
+.header {
+  margin: 2vw 3vw;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 4.8vw;
+  /* background: red; */
+  width: 95%;
+  font-family: "Spline Sans", serif;
+}
+.logo {
+  width: 21%;
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  list-style: none;
+  /* gap: 2.4vw; */
+  padding: 1vw;
+ 
+}
+.navbar li {
+  font-size: 1.4vw;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 0.6vw;
+  /* font-style:"Spline Sans" ; */
+}
+.navbar li:hover {
+  color: rgba(63, 92, 209, 1);
+}
+
+.changecolor {
+  color: rgba(63, 92, 209, 1);
+}
+.lefthead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3vw;
+}
+.lefthead h1 {
+  color: rgba(63, 92, 209, 1);
+  font-style: "Spline Sans";
+  font-size: 1.6vw;
+  font-weight: 600;
+}
+.lefthead h1 span {
+  font-size: 2.2vw;
+  font-weight: 900;
+}
+.link1 {
+  text-decoration: none;
+  color: white;
+  background: black;
+  font-size: 1.4vw;
+  padding: 0.9vw 1.2vw;
+}
+.link2 {
+  text-decoration: none;
+  color: rgba(63, 92, 209, 1);
+  border: 2px solid rgba(63, 92, 209, 1);
+  font-size: 1.4vw;
+  padding: 0.7vw 1vw;
+  font-weight: 700;
+}
+.link2:hover {
+  background: rgba(63, 92, 209, 0.1);
+
+}
+.righthead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vw;
+}
