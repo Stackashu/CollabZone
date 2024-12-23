@@ -1,10 +1,10 @@
 .header {
-  margin: 2vw 3vw;
+  margin: 3vw 4vw;
   display: flex;
   /* justify-content: space-between; */
-  gap: 4.8vw;
+  gap: 3vw;
   /* background: red; */
-  width: 95%;
+  width: 90%;
   font-family: "Spline Sans", serif;
 }
 .logo {
@@ -18,13 +18,12 @@
   list-style: none;
   /* gap: 2.4vw; */
   padding: 1vw;
- 
 }
 .navbar li {
   font-size: 1.4vw;
   font-weight: 500;
   cursor: pointer;
-  margin-right: 0.6vw;
+  margin-right: 0.4vw;
   /* font-style:"Spline Sans" ; */
 }
 .navbar li:hover {
@@ -41,7 +40,7 @@
   gap: 0.3vw;
 }
 .lefthead h1 {
-  color: rgba(63, 92, 209, 1);
+  color: var(--basic-color);
   font-style: "Spline Sans";
   font-size: 1.6vw;
   font-weight: 600;
@@ -67,11 +66,294 @@
 }
 .link2:hover {
   background: rgba(63, 92, 209, 0.1);
-
 }
 .righthead {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5vw;
+}
+.header2 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .header2 {
+    border-top: 2px solid rgba(63, 92, 209, 0.2);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* margin: 3vw 5vw; */
+    /* background: yellow; */
+    align-items: center;
+    padding: 2vw 4vw;
+    justify-content: space-between;
+    font-family: "Spline Sans", serif;
+  }
+  .lefthead2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--basic-color);
+    gap: 0.3vw;
+  }
+  .logo2 {
+    width: 25%;
+    cursor: pointer;
+  }
+  
+  .button {
+    font-size: 50px;
+  }
+  .cross {
+    font-size: 100px;
+  }
+
+  .lefthead2 h1 {
+    color: var(--basic-color);
+    font-style: "Spline Sans";
+    font-size: 3.5vw;
+    font-weight: 600;
+  }
+  .lefthead2 h1 span {
+    font-size: 5vw;
+    font-weight: 900;
+  }
+  .mainnav {
+    border-top: 2px solid rgba(63, 92, 209, 0.2);
+    display: flex;
+    background: white;
+    flex-direction: column;
+    align-items: end;
+    padding: 3vw;
+    height: 45vh;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    gap: 1.8vw;
+    top: 100px;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  .mainnavup {
+    border-top: 2px solid rgba(63, 92, 209, 0.2);
+    display: flex;
+    background: white;
+    flex-direction: column;
+    align-items: end;
+    padding: 3vw;
+    height: 45vh;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    gap: 4vw;
+    top: -335px;
+    width: 100%;
+  }
+  .navbar2 {
+    background: white;
+    /* background: red; */
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1vw;
+    font-style: "Spline Sans";
+    gap: 4vw;
+    flex-wrap: wrap;
+  }
+
+  .navbar2 li {
+    width: 30%;
+    font-size: 2.4vw;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.4vw;
+    font-size: 3vw;
+    gap: 2vw;
+  }
+  .navbar2 li h4 {
+    /* color: var(--basic-color); */
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .linkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    width: 100%;
+  }
+  .link1 {
+    text-decoration: none;
+    color: white;
+    background: black;
+    font-size: 3vw;
+    padding: 2vw 3.5vw;
+  }
+  .link2 {
+    text-decoration: none;
+    color: rgba(63, 92, 209, 1);
+    border: 2px solid rgba(63, 92, 209, 1);
+    font-size: 3vw;
+    padding: 2vw 3.5vw;
+    font-weight: 700;
+  }
+  .link2:hover {
+    background: rgba(63, 92, 209, 0.1);
+  }
+ 
+}
+
+@media (max-width: 480px) {
+  .header {
+    display: none;
+  }
+  .header2 {
+    border-top: 2px solid rgba(63, 92, 209, 0.2);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* margin: 3vw 5vw; */
+    /* background: yellow; */
+    align-items: center;
+    padding: 4vw 4vw;
+    justify-content: space-between;
+    font-family: "Spline Sans", serif;
+  }
+  .lefthead2 {
+    margin-left: -8vw;
+    /* background: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--basic-color);
+    gap: 0.3vw;
+    text-align: left;
+  }
+  .logo2 {
+    width: 15%;
+    cursor: pointer;
+  }
+
+  .lefthead2 h1 {
+    color: var(--basic-color);
+    font-style: "Spline Sans";
+    font-size: 5vw;
+    font-weight: 600;
+  }
+  .lefthead2 h1 span {
+    font-size: 6vw;
+    font-weight: 900;
+  }
+  .mainnav {
+    border-top: 2px solid rgba(63, 92, 209, 0.2);
+    display: flex;
+    background: white;
+    flex-direction: column;
+    align-items: end;
+    padding: 3vw;
+    height: 45vh;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    gap: 2vw;
+    top: 100px;
+    width: 100%;
+  }
+
+  .mainnavup {
+    border-top: 2px solid rgba(63, 92, 209, 0.2);
+    display: flex;
+    background: white;
+    flex-direction: column;
+    align-items: end;
+    padding: 3vw;
+    height: 45vh;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    gap: 5vw;
+    top: -230px;
+    width: 100%;
+  }
+  .navbar2 {
+    background: white;
+    /* background: red; */
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1vw;
+    font-style: "Spline Sans";
+    gap: 4vw;
+    flex-wrap: wrap;
+  }
+
+  .navbar2 li {
+    width: 30%;
+    /* font-size: 5vw; */
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.4vw;
+    font-size: 3vw;
+    gap: 2vw;
+  }
+  .navbar2 li h4:hover {
+    color: var(--basic-color);
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .linkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    width: 100%;
+  }
+  .link1 {
+    text-decoration: none;
+    color: white;
+    background: black;
+    font-size: 3vw;
+    padding: 2vw 3.5vw;
+  }
+  .link2 {
+    text-decoration: none;
+    color: rgba(63, 92, 209, 1);
+    border: 2px solid rgba(63, 92, 209, 1);
+    font-size: 3vw;
+    padding: 2vw 3.5vw;
+    font-weight: 700;
+  }
+  .link2:hover {
+    background: rgba(63, 92, 209, 0.1);
+  }
+  .button {
+    font-size: 7px;
+  }
+
+  .cross {
+    font-size: 10px;
+  }
 }
