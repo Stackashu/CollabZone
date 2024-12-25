@@ -7,6 +7,7 @@
   background: white;
   position: relative;
 }
+
 .smallEclipse {
   position: absolute;
   right: 7%;
@@ -18,16 +19,15 @@
   box-shadow: 0 0 200px rgba(19, 19, 19, 0.4);
   animation: small 2s infinite cubic-bezier(0, 0, 1, 1);
 }
-
 @keyframes small {
   0% {
-    top: 1%;
+    top: 2%;
   }
   25% {
     top: 4%;
   }
   75% {
-    top: 8%;
+    top: 6%;
   }
   100% {
     top: 2%;
@@ -45,22 +45,21 @@
   box-shadow: 0 0 200px rgba(19, 19, 19, 0.4);
   animation: large 1.5s infinite cubic-bezier(0, 0, 1, 1);
 }
-
-
 @keyframes large {
   0% {
-    top: 4%;
+    top: 6%;
   }
   25% {
     top: 10%;
   }
   75% {
-    top: 20%;
+    top: 14%;
   }
   100% {
-    top: 4%;
+    top: 6%;
   }
 }
+
 
 .innerbox {
   padding: 3vw;
@@ -71,6 +70,7 @@
   align-items: center;
   text-align: center;
 }
+
 .hero {
   z-index: 1;
   display: flex;
@@ -79,17 +79,21 @@
   align-items: center;
   gap: 2vw;
 }
+
 .hero h1 {
   font-size: 3.3vw;
 }
+
 .hero h1 span {
   color: var(--basic-color);
 }
+
 .hero h3 {
   font-size: 1.6vw;
   color: rgb(104, 101, 101);
   font-weight: 500;
 }
+
 .form {
   gap: 2vw;
   display: flex;
@@ -112,9 +116,11 @@
   font-weight: 700;
   outline: none;
 }
+
 .form input::placeholder {
   color: rgb(150, 148, 148);
 }
+
 .form button {
   padding: 1.5vw 2.3vw;
   border-radius: 30px;
@@ -129,16 +135,11 @@
 .badge1 {
   position: absolute;
   z-index: 1;
-  animation: badge 2s infinite cubic-bezier(0, 0, 1, 1);
-}
-
-.badge1 {
-  position: absolute;
-  z-index: 1;
   top: 60%;
   width: 20%;
   animation: badge1 4s infinite cubic-bezier(0, 0, 1, 1);
 }
+
 .badge2 {
   position: absolute;
   z-index: 1;
@@ -168,6 +169,7 @@
     top: 58%;
   }
 }
+
 @keyframes badge2 {
   0% {
     top: 98%;
@@ -182,6 +184,7 @@
     top: 98%;
   }
 }
+
 @keyframes badge3 {
   0% {
     top: 88%;
@@ -197,3 +200,290 @@
   }
 }
 
+@media (max-width: 768px) {
+  .outerbox {
+    padding: 5vw;
+    margin: 8vw 5vw;
+    /* background: red; */
+  }
+  .smallEclipse {
+    width: 15vw;
+    height: 15vw;
+    right: 5%;
+    top: 20%;
+  }
+  @keyframes small {
+    0% {
+      top: 5%;
+    }
+    25% {
+      top: 8%;
+    }
+    75% {
+      top: 12%;
+    }
+    100% {
+      top: 5%;
+    }
+  }
+  
+  .largEclipse {
+    width: 25vw;
+    height: 25vw;
+    left: 5%;
+    top: 15%;
+  }
+
+  @keyframes large {
+    0% {
+      top: 18%;
+    }
+    25% {
+      top: 20%;
+    }
+    75% {
+      top: 22%;
+    }
+    100% {
+      top: 18%;
+    }
+  }
+  .innerbox {
+    padding: 5vw;
+    /* background: red; */
+  }
+  .hero {
+    gap: 5vw;
+  }
+  .hero h1 {
+    font-size: 6vw;
+  }
+  .hero h3 {
+    font-size: 3vw;
+  }
+  .form {
+    gap: 4vw;
+    padding: 1vw;
+    box-shadow: 450px 20px 60px 200px var(--home-bg-color),
+    -450px 20px 60px 200px var(--home-bg-color);
+  }
+
+  .form input,
+  .form input:focus,
+  .form input:active {
+    font-size: 2.8vw;
+    margin: 1vw;
+    /* padding: 0vw 0vw; */
+  }
+  .form button {
+    padding: 3.5vw 3vw;
+    font-size: 3vw;
+    border-radius: 50px;
+    /* margin: 1vw; */
+  }
+  .badge1 {
+    top: 70%;
+    left: 0;
+    width: 25%;
+  }
+  .badge2 {
+    right: 40%;
+    width: 25%;
+  }
+  .badge3 {
+    right: 2%;
+    width: 31%;
+    width: 25%;
+  }
+
+  @keyframes badge1 {
+    0% {
+      top: 95%;
+    }
+    25% {
+      top: 100%;
+    }
+    75% {
+      top: 102%;
+    }
+    100% {
+      top: 95%;
+    }
+  }
+  
+  @keyframes badge2 {
+    0% {
+      top: 108%;
+    }
+    25% {
+      top: 110%;
+    }
+    75% {
+      top: 112%;
+    }
+    100% {
+      top: 108%;
+    }
+  }
+  
+  @keyframes badge3 {
+    0% {
+      top: 98%;
+    }
+    25% {
+      top: 100%;
+    }
+    75% {
+      top: 102%;
+    }
+    100% {
+      top: 98%;
+    }
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .outerbox {
+    padding: 5vw;
+    margin: 10vw 5vw;
+    /* background: red; */
+  }
+  .smallEclipse {
+    width: 15vw;
+    height: 15vw;
+    right: 5%;
+    top: 20%;
+  }
+  @keyframes small {
+    0% {
+      top: 18%;
+    }
+    25% {
+      top: 20%;
+    }
+    75% {
+      top: 22%;
+    }
+    100% {
+      top: 18%;
+    }
+  }
+  
+  .largEclipse {
+    width: 25vw;
+    height: 25vw;
+    left: 5%;
+    top: 15%;
+  }
+
+  @keyframes large {
+    0% {
+      top: 38%;
+    }
+    25% {
+      top: 40%;
+    }
+    75% {
+      top: 42%;
+    }
+    100% {
+      top: 38%;
+    }
+  }
+  .innerbox {
+    padding: 5vw;
+    /* background: red; */
+    margin: 10vw 0vw;
+    /* gap: 5vw; */
+  }
+  .hero {
+    gap: 10vw;
+  }
+  .hero h1 {
+    font-size: 6vw;
+  }
+  .hero h3 {
+    font-size: 3vw;
+  }
+  .form {
+    gap: 0vw;
+    padding: 1vw;
+    box-shadow: 330px 20px 60px 200px var(--home-bg-color),
+    -330px 20px 60px 200px var(--home-bg-color);
+  }
+
+  .form input,
+  .form input:focus,
+  .form input:active {
+    font-size: 2.8vw;
+    margin: 1vw;
+    /* padding: 0vw 0vw; */
+  }
+  .form button {
+    padding: 3vw 2.5vw;
+    font-size: 2.7vw;
+    border-radius: 50px;
+    /* margin: 1vw; */
+  }
+  .badge1 {
+    top: 70%;
+    left: 0;
+    width: 35%;
+  }
+  .badge2 {
+    right: 40%;
+    width: 35%;
+  }
+  .badge3 {
+    right: 5%;
+    width: 31%;
+    width: 35%;
+  }
+
+  @keyframes badge1 {
+    0% {
+      top: 75%;
+    }
+    25% {
+      top: 80%;
+    }
+    75% {
+      top: 82%;
+    }
+    100% {
+      top: 75%;
+    }
+  }
+  
+  @keyframes badge2 {
+    0% {
+      top: 108%;
+    }
+    25% {
+      top: 110%;
+    }
+    75% {
+      top: 112%;
+    }
+    100% {
+      top: 108%;
+    }
+  }
+  
+  @keyframes badge3 {
+    0% {
+      top: 93%;
+    }
+    25% {
+      top: 95%;
+    }
+    75% {
+      top: 97%;
+    }
+    100% {
+      top: 93%;
+    }
+  }
+  
+}

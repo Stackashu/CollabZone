@@ -5,7 +5,6 @@
   background: white;
   border-radius: 25px;
   gap: 0vw;
-
   font-family: "Spline Sans", serif;
 }
 
@@ -13,6 +12,7 @@
   width: 17%;
   padding: .5vw 1vw;
 }
+
 .box h4 {
   font-weight: 400;
   font-size: 1vw;
@@ -39,4 +39,71 @@
     right: -5%;
     border: 1.5px solid var(--basic-color);
     object-fit: cover;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .box {
+    /* flex-direction: column; */
+    padding: 1vw;
+    gap: 2vw;
+    
+  }
+
+  .pic {
+    width: 30%;
+    padding: 1vw;
+  }
+
+  .box h4 {
+    font-size: 1.8vw;
+  }
+
+  .downarrow {
+    bottom: -30%;
+    right: 10%;
+  }
+
+  .profile{
+    width: 35%;
+    height: 90%;
+    bottom: -130%;
+    right: -10%;
+  }
+}
+
+/* mobile view */
+@media (max-width: 460px) {
+  .box {
+    /* flex-direction: column; */
+    padding: 0vw;
+    gap: 0vw;
+    width: 115%;
+    
+  }
+
+  .pic {
+    width: 20%;
+    padding: 1.5vw;
+  }
+
+  .box h4 {
+    font-size: 2vw;
+    padding: 2vw;
+  }
+
+  .downarrow {
+    bottom: -30%;
+    right: 0%;
+    border-left:2vw solid transparent;
+    border-right:2vw solid transparent;
+    border-top: 3vw solid white;
+  }
+
+  .profile{
+    width: 25%;
+    height: 100%;
+    bottom: -130%;
+    right: -15%;
+  }
 }

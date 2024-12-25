@@ -17,28 +17,28 @@ const Home = () => {
   return ( 
     <div className={`${style.outerbox}`}>
       <div className={`${style.innerbox}`}>
-        <div className={`${style.smallEclipse}`}></div>
-        <div className={`${style.largEclipse}`}></div>
-        <div className={`${style.hero}`}>
-          <h1>
-            Find Your Perfect Startup <span>Partner</span> Today!
-          </h1>
-          <h3>
-            Connect with like-minded entrepreneurs and manage your projects
-            seamlessly.
-          </h3>
-
-          <form onSubmit={handleSubmit} className={`${style.form}`}>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email address"
-              required
-            />
-            <button type="submit">Get Started</button>
-          </form>
-        </div>
+               <div className={`${style.smallEclipse}`}></div>
+               <div className={`${style.largEclipse}`}></div>
+            <div className={`${style.hero}`}>
+              <h1>
+                Find Your Perfect Startup <span>Partner</span> Today!
+              </h1>
+              <h3>
+                Connect with like-minded entrepreneurs and manage your projects
+                seamlessly.
+               </h3>
+    
+              <form onSubmit={handleSubmit} className={`${style.form}`}>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email address"
+                  required
+                />
+                <button type="submit">Get Started</button>
+              </form>
+            </div>
       </div>
       <div className={`${style.badge1}`}> <ProfileBadge pic={Human} headline={heading1}  /></div>
       <div className={`${style.badge2}`}> <ProfileBadge pic={Controlpanel} headline={heading2}/></div>
