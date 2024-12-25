@@ -1,0 +1,42 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  gap: 0vw;
+
+  font-family: "Spline Sans", serif;
+}
+
+.pic {
+  width: 17%;
+  padding: .5vw 1vw;
+}
+.box h4 {
+  font-weight: 400;
+  font-size: 1vw;
+  color: var(--basic-color);
+}
+
+.downarrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left:1vw solid transparent;
+  border-right: 1vw solid transparent;
+  border-top: 2vw solid white;
+  bottom: -65%;
+  right: 5%;
+}
+
+.profile{
+    position: absolute;
+    width: 18%;
+    height: 150%;
+    border-radius: 100%;
+    bottom: -200%;
+    right: -5%;
+    border: 1.5px solid var(--basic-color);
+    object-fit: cover;
+}

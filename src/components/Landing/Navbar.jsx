@@ -12,10 +12,10 @@ import DocumentScannerOutlinedIcon from '@mui/icons-material/DocumentScannerOutl
 import GamepadOutlinedIcon from '@mui/icons-material/GamepadOutlined';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const navs = ["Home", "Features", "How It Works", "Testimonials", "FAQs"];
+ 
 
   return (
     <>
@@ -29,15 +29,11 @@ const Navbar = () => {
 
         <nav>
           <ul className={`${style.navbar} `}>
-            {navs.map((nav, index) => (
-              <li
-                key={index}
-                className={`${style.navbar} ${
-                  activeIndex === index ? "changecolor" : ""}`}
-                onClick={() => setActiveIndex(index)}  >
-                {nav}
-              </li>
-            ))}
+           <li>Home</li>
+           <li>Features</li>
+           <li>How It Works</li>
+           <li>Testimonials</li>
+           <li>FAQs</li>
           </ul>
         </nav>
 

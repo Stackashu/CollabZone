@@ -2,7 +2,7 @@
   margin: 3vw 4vw;
   display: flex;
   /* justify-content: space-between; */
-  gap: 3vw;
+  gap: 2.5vw;
   /* background: red; */
   width: 90%;
   font-family: "Spline Sans", serif;
@@ -16,7 +16,7 @@
   /* justify-content: center; */
   /* align-items: center; */
   list-style: none;
-  /* gap: 2.4vw; */
+  gap: 2.4vw;
   padding: 1vw;
 }
 .navbar li {

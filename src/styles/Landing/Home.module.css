@@ -1,0 +1,199 @@
+.outerbox {
+  padding: 2vw;
+  background: white;
+  margin: 5vw;
+  font-family: "Spline Sans", serif;
+  backdrop-filter: blur(1000px);
+  background: white;
+  position: relative;
+}
+.smallEclipse {
+  position: absolute;
+  right: 7%;
+  top: 4%;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  background-color: var(--small-eclipse);
+  box-shadow: 0 0 200px rgba(19, 19, 19, 0.4);
+  animation: small 2s infinite cubic-bezier(0, 0, 1, 1);
+}
+
+@keyframes small {
+  0% {
+    top: 1%;
+  }
+  25% {
+    top: 4%;
+  }
+  75% {
+    top: 8%;
+  }
+  100% {
+    top: 2%;
+  }
+}
+
+.largEclipse {
+  position: absolute;
+  width: 20vw;
+  left: 20%;
+  top: 10%;
+  height: 20vw;
+  border-radius: 50%;
+  background-color: var(--large-eclipse);
+  box-shadow: 0 0 200px rgba(19, 19, 19, 0.4);
+  animation: large 1.5s infinite cubic-bezier(0, 0, 1, 1);
+}
+
+
+@keyframes large {
+  0% {
+    top: 4%;
+  }
+  25% {
+    top: 10%;
+  }
+  75% {
+    top: 20%;
+  }
+  100% {
+    top: 4%;
+  }
+}
+
+.innerbox {
+  padding: 3vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.hero h1 {
+  font-size: 3.3vw;
+}
+.hero h1 span {
+  color: var(--basic-color);
+}
+.hero h3 {
+  font-size: 1.6vw;
+  color: rgb(104, 101, 101);
+  font-weight: 500;
+}
+.form {
+  gap: 2vw;
+  display: flex;
+  background: white;
+  padding: 0.6vw;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 380px 20px 30px 150px var(--home-bg-color),
+    -380px 20px 30px 150px var(--home-bg-color);
+}
+
+.form input,
+.form input:focus,
+.form input:active {
+  border: none;
+  font-size: 1.4vw;
+  margin: 0.5vw;
+  padding: 0vw 1vw;
+  font-weight: 700;
+  outline: none;
+}
+.form input::placeholder {
+  color: rgb(150, 148, 148);
+}
+.form button {
+  padding: 1.5vw 2.3vw;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  background: var(--basic-color);
+  font-size: 1.4vw;
+  border: 0 solid white;
+  cursor: pointer;
+}
+
+.badge1 {
+  position: absolute;
+  z-index: 1;
+  animation: badge 2s infinite cubic-bezier(0, 0, 1, 1);
+}
+
+.badge1 {
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  width: 20%;
+  animation: badge1 4s infinite cubic-bezier(0, 0, 1, 1);
+}
+.badge2 {
+  position: absolute;
+  z-index: 1;
+  right: 50%;
+  animation: badge2 4s infinite cubic-bezier(0, 0, 1, 1);
+}
+
+.badge3 {
+  position: absolute;
+  z-index: 1;
+  right: 10%;
+  width: 21%;
+  animation: badge3 4s infinite cubic-bezier(0, 0, 1, 1);
+}
+
+@keyframes badge1 {
+  0% {
+    top: 58%;
+  }
+  25% {
+    top: 60%;
+  }
+  75% {
+    top: 62%;
+  }
+  100% {
+    top: 58%;
+  }
+}
+@keyframes badge2 {
+  0% {
+    top: 98%;
+  }
+  25% {
+    top: 100%;
+  }
+  75% {
+    top: 102%;
+  }
+  100% {
+    top: 98%;
+  }
+}
+@keyframes badge3 {
+  0% {
+    top: 88%;
+  }
+  25% {
+    top: 90%;
+  }
+  75% {
+    top: 82%;
+  }
+  100% {
+    top: 88%;
+  }
+}
+
