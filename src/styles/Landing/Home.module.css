@@ -47,16 +47,16 @@
 }
 @keyframes large {
   0% {
-    top: 6%;
+    top: 26%;
   }
   25% {
-    top: 10%;
+    top: 30%;
   }
   75% {
-    top: 14%;
+    top: 34%;
   }
   100% {
-    top: 6%;
+    top: 26%;
   }
 }
 
@@ -102,8 +102,8 @@
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  box-shadow: 380px 20px 30px 150px var(--home-bg-color),
-    -380px 20px 30px 150px var(--home-bg-color);
+  box-shadow: 0 90px 100px 300px var(--home-bg-color);
+   
 }
 
 .form input,
@@ -143,7 +143,7 @@
 .badge2 {
   position: absolute;
   z-index: 1;
-  right: 50%;
+  right: 45%;
   animation: badge2 4s infinite cubic-bezier(0, 0, 1, 1);
 }
 
@@ -157,31 +157,31 @@
 
 @keyframes badge1 {
   0% {
-    top: 58%;
+    top: 68%;
   }
   25% {
-    top: 60%;
+    top: 70%;
   }
   75% {
-    top: 62%;
+    top: 72;
   }
   100% {
-    top: 58%;
+    top: 68%;
   }
 }
 
 @keyframes badge2 {
   0% {
-    top: 98%;
+    top: 108%;
   }
   25% {
-    top: 100%;
+    top: 110%;
   }
   75% {
-    top: 102%;
+    top: 112%;
   }
   100% {
-    top: 98%;
+    top: 108%;
   }
 }
 
@@ -249,7 +249,7 @@
     }
   }
   .innerbox {
-    padding: 5vw;
+    padding: 5vw 2vw;
     /* background: red; */
   }
   .hero {
@@ -262,10 +262,9 @@
     font-size: 3vw;
   }
   .form {
-    gap: 4vw;
+    gap: 0vw;
     padding: 1vw;
-    box-shadow: 450px 20px 60px 200px var(--home-bg-color),
-    -450px 20px 60px 200px var(--home-bg-color);
+    box-shadow:   0 50px 100px 250px var(--home-bg-color);
   }
 
   .form input,
@@ -276,8 +275,8 @@
     /* padding: 0vw 0vw; */
   }
   .form button {
-    padding: 3.5vw 3vw;
-    font-size: 3vw;
+    padding: 3vw 3vw;
+    font-size: 2.5vw;
     border-radius: 50px;
     /* margin: 1vw; */
   }
@@ -346,7 +345,7 @@
 @media (max-width: 480px) {
   .outerbox {
     padding: 5vw;
-    margin: 10vw 5vw;
+    margin: 5vw 3vw;
     /* background: red; */
   }
   .smallEclipse {
@@ -409,8 +408,7 @@
   .form {
     gap: 0vw;
     padding: 1vw;
-    box-shadow: 330px 20px 60px 200px var(--home-bg-color),
-    -330px 20px 60px 200px var(--home-bg-color);
+    box-shadow:   0 0 100px 150px var(--home-bg-color);
   }
 
   .form input,
@@ -421,8 +419,8 @@
     /* padding: 0vw 0vw; */
   }
   .form button {
-    padding: 3vw 2.5vw;
-    font-size: 2.7vw;
+    padding: 2.5vw 2.5vw;
+    font-size: 2.5vw;
     border-radius: 50px;
     /* margin: 1vw; */
   }

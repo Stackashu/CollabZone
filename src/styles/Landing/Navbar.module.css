@@ -18,6 +18,7 @@
   list-style: none;
   gap: 2.4vw;
   padding: 1vw;
+  overflow: hidden;
 }
 .navbar li {
   font-size: 1.4vw;
@@ -83,11 +84,12 @@
   .header2 {
     border-top: 2px solid rgba(63, 92, 209, 0.2);
     display: flex;
-    position: absolute;
+    position:fixed;
+    z-index: 1;
     bottom: 0;
     width: 100%;
     /* margin: 3vw 5vw; */
-    /* background: yellow; */
+    background: white;
     align-items: center;
     padding: 2vw 4vw;
     justify-content: space-between;
@@ -223,11 +225,12 @@
   .header2 {
     border-top: 2px solid rgba(63, 92, 209, 0.2);
     display: flex;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1;
     /* margin: 3vw 5vw; */
-    /* background: yellow; */
+    background: white;
     align-items: center;
     padding: 4vw 4vw;
     justify-content: space-between;

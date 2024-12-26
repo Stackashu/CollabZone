@@ -8,13 +8,30 @@
 
 :root {
     --basic-color: rgba(63, 92, 209, 1);
-    --home-bg-color :rgba(57, 88, 209, 0.144);
+    --home-bg-color :rgba(16, 60, 235, 0.144);
     --small-eclipse:rgba(63, 92, 209, 0.22);
     --large-eclipse: rgba(63, 92, 209, 0.22);
      
 
 }
 
-body{
-  /* font-family: "Spline Sans", sans-serif; */
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  /* height: 5px; */
+  /* background-color: var(--basic-color); */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--small-eclipse);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--large-eclipse);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
