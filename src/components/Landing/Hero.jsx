@@ -13,7 +13,7 @@ const Hero = () => {
       <div className={`${style.innerhero}`}>
 
         <div className={`${style.left}`}>
-          <img src={lady} alt="person" />
+          {/* <img src={lady} alt="person" /> */}
         </div>
 
         <div className={`${style.right}`}>

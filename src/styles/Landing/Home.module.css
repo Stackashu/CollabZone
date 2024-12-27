@@ -43,20 +43,20 @@
   border-radius: 50%;
   background-color: var(--large-eclipse);
   box-shadow: 0 0 200px rgba(19, 19, 19, 0.4);
-  animation: large 1.5s infinite cubic-bezier(0, 0, 1, 1);
+  animation: large 2s infinite cubic-bezier(0, 0, 1, 1);
 }
 @keyframes large {
   0% {
-    top: 26%;
+    top: 20%;
   }
   25% {
     top: 30%;
   }
   75% {
-    top: 34%;
+    top: 40%;
   }
   100% {
-    top: 26%;
+    top: 20%;
   }
 }
 
@@ -102,8 +102,8 @@
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 90px 100px 300px var(--home-bg-color);
-   
+  box-shadow: -330px 50px 100px 170px var(--home-bg-color),
+            330px 50px 100px 170px var(--home-bg-color);
 }
 
 .form input,
@@ -123,7 +123,7 @@
 
 .form button {
   padding: 1.5vw 2.3vw;
-  border-radius: 30px;
+  border-radius: 50px;
   color: white;
   font-weight: 600;
   background: var(--basic-color);

@@ -1,8 +1,8 @@
 .header {
   margin: 3vw 4vw;
   display: flex;
-  /* justify-content: space-between; */
-  gap: 2.5vw;
+  justify-content: space-between;
+  /* gap: 3.5vw; */
   /* background: red; */
   width: 90%;
   font-family: "Spline Sans", serif;
@@ -11,7 +11,7 @@
   width: 21%;
   cursor: pointer;
 }
-.navbar {
+.navbar { 
   display: flex;
   /* justify-content: center; */
   /* align-items: center; */
@@ -21,7 +21,7 @@
   overflow: hidden;
 }
 .navbar li {
-  font-size: 1.4vw;
+  font-size: 1.1vw;
   font-weight: 500;
   cursor: pointer;
   margin-right: 0.4vw;
@@ -151,7 +151,7 @@
     z-index: 10;
     position: absolute;
     left: 0;
-    gap: 4vw;
+    gap: 5vw;
     top: -335px;
     width: 100%;
   }
@@ -160,12 +160,15 @@
     /* background: red; */
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
     width: 100%;
     margin-bottom: 1vw;
     font-style: "Spline Sans";
-    gap: 4vw;
+    justify-content: center;
+    gap: 3vw;
+    margin: 0 auto;
+    padding: 4vw;
     flex-wrap: wrap;
   }
 
@@ -182,6 +185,7 @@
     font-size: 3vw;
     gap: 2vw;
   }
+
   .navbar2 li h4 {
     /* color: var(--basic-color); */
   }
@@ -230,7 +234,7 @@
     width: 100%;
     z-index: 1;
     /* margin: 3vw 5vw; */
-    background: white;
+    /* background: yellow; */
     align-items: center;
     padding: 4vw 4vw;
     justify-content: space-between;
@@ -284,12 +288,12 @@
     flex-direction: column;
     align-items: end;
     padding: 3vw;
-    height: 45vh;
+    height: 40vh;
     z-index: 10;
     position: absolute;
     left: 0;
-    gap: 5vw;
-    top: -230px;
+    gap: 2vw;
+    top: -190px;
     width: 100%;
   }
   .navbar2 {
@@ -297,12 +301,12 @@
     /* background: red; */
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 1vw;
     font-style: "Spline Sans";
-    gap: 4vw;
+    gap: 3vw;
     flex-wrap: wrap;
   }
 

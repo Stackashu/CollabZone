@@ -1,5 +1,5 @@
 .outerhero {
-  margin: 8vw 5vw 8vw;
+  margin: 8vw 5vw 2vw;
   padding: 4vw;
   font-family: "Spline Sans", serif;
   /* background: red; */
@@ -10,33 +10,32 @@
   justify-content: center;
   align-items: center;
   gap: 5vw;
-  padding: 2vw;
+  padding: 5vw;
 }
 
 .left {
-  /* padding: 4vw; */
-  width: 100%;
-  height: 100%;
+  padding: 15vw 4vw;
+  width: 65%;
+  /* height: 100%; */
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.left img {
-  width: 120%;
-  object-fit: cover;
-  height: 100%;
-  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://s3-alpha-sig.figma.com/img/0491/53eb/27e60d5915ccd647eac34b8551c57b2d?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nd7gxmORSk7CZZCSxQmOEU5ZQemLLG3wI4NOZGW-tUQO3PM2MjOS5Wo5ZSFo~okfChMzQwKRtuUV1W7q0FcTbk9GaAeAXVmD-~bET2KfoY0lgjX~6Jgc9-jovM5nHp2guI8UsjUcm-r~mBmq0mveqsK8outu9il~fVY3JBg7dkKqzy~eGIRs0Q0YLjnTiDjvn1xeGbbrhBbo82vtgeNMJZ9KlU-wl6UPeBGav04BB-A7-58mSqipH4zlkVJnaRPaLzpHJX6rR12Nv0kdt8ZSJWFLPPwbdNir6IJq~HLahucMNMh-9gibwKM~gETz~Nx5jdUSH5ENtJTWNHbIu6mO0w__");
 }
 
 .right {
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 1.3vw;
+  width: 100%;
 }
 
 .media1 {
-  width: 2.3vw;
+  width: 1.9vw;
 }
 
 .media {
@@ -51,7 +50,7 @@
 }
 
 .para {
-  color: rgb(82, 80, 80);
+  color: rgb(126, 121, 121);
   width: 75%;
   font-size: 1.1vw;
   text-align: left;
@@ -59,9 +58,10 @@
 
 .join {
   background: var(--basic-color);
-  padding: 1.2vw 2.5vw;
-  width: 30%;
+  padding: 0.8vw 1.2vw;
+  width: 33%;
   text-align: center;
+  font-size: 1.3vw;
   color: white;
   font-weight: 600;
   cursor: pointer;
@@ -86,13 +86,15 @@
 .innum {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* gap: .1vw; */
+  /* justify-content: center; */
   align-items: center;
 }
 
 @media (max-width: 768px) {
   .outerhero {
-    margin: 35vw 3vw 20vw;
+    margin: 35vw 3vw 1vw;
+    /* background: #ff0000; */
     padding: 3vw;
   }
 
@@ -101,8 +103,17 @@
     flex-direction: column;
   }
 
-  .left img {
-    width: 100%;
+  .left {
+    padding: 35vw ;
+    width: 60%;
+    /* height: 100%; */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://s3-alpha-sig.figma.com/img/0491/53eb/27e60d5915ccd647eac34b8551c57b2d?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nd7gxmORSk7CZZCSxQmOEU5ZQemLLG3wI4NOZGW-tUQO3PM2MjOS5Wo5ZSFo~okfChMzQwKRtuUV1W7q0FcTbk9GaAeAXVmD-~bET2KfoY0lgjX~6Jgc9-jovM5nHp2guI8UsjUcm-r~mBmq0mveqsK8outu9il~fVY3JBg7dkKqzy~eGIRs0Q0YLjnTiDjvn1xeGbbrhBbo82vtgeNMJZ9KlU-wl6UPeBGav04BB-A7-58mSqipH4zlkVJnaRPaLzpHJX6rR12Nv0kdt8ZSJWFLPPwbdNir6IJq~HLahucMNMh-9gibwKM~gETz~Nx5jdUSH5ENtJTWNHbIu6mO0w__");
   }
   .socialmedia {
     display: flex;
@@ -151,7 +162,7 @@
 
 @media (max-width: 480px) {
   .outerhero {
-    margin: 35vw 3vw 20vw;
+    margin: 35vw 3vw 1vw;
     padding: 3vw;
   }
 
@@ -160,8 +171,16 @@
     flex-direction: column;
   }
 
-  .left img {
-    width: 100%;
+  .left {
+    padding: 40vw ;
+    width: 60%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://s3-alpha-sig.figma.com/img/0491/53eb/27e60d5915ccd647eac34b8551c57b2d?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nd7gxmORSk7CZZCSxQmOEU5ZQemLLG3wI4NOZGW-tUQO3PM2MjOS5Wo5ZSFo~okfChMzQwKRtuUV1W7q0FcTbk9GaAeAXVmD-~bET2KfoY0lgjX~6Jgc9-jovM5nHp2guI8UsjUcm-r~mBmq0mveqsK8outu9il~fVY3JBg7dkKqzy~eGIRs0Q0YLjnTiDjvn1xeGbbrhBbo82vtgeNMJZ9KlU-wl6UPeBGav04BB-A7-58mSqipH4zlkVJnaRPaLzpHJX6rR12Nv0kdt8ZSJWFLPPwbdNir6IJq~HLahucMNMh-9gibwKM~gETz~Nx5jdUSH5ENtJTWNHbIu6mO0w__");
   }
   .socialmedia {
     display: flex;
@@ -208,6 +227,6 @@
   }
 
   .number h3 {
-    font-size: 2.2vw;
+    font-size: 2.1vw;
   }
 }

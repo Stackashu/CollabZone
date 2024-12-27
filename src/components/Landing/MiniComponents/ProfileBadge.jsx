@@ -7,7 +7,7 @@ import Badgepic from "../../../assests/images/badgepic.png";
 const ProfileBadge = ({pic , headline}) => {
   return (
     <span className={`${style.box}`}>
-      <img  className={`${style.pic}`} src={pic} alt='pic' />
+      <img loading="lazy"  className={`${style.pic}`} src={pic} alt='pic' />
       <h4>{headline}</h4>
      <div className={`${style.downarrow}`}></div>
       <img className={`${style.profile}`} src={Badgepic} alt='badgepic'/>
