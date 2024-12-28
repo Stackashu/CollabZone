@@ -1,0 +1,124 @@
+.guide {
+  font-family: "Spline Sans", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 120vh;
+  align-items: center;
+  margin: 2vw 0vw 5vw;
+}
+
+.bgdiv {
+  display: flex;
+  width: 100%;
+  height: 120vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://s3-alpha-sig.figma.com/img/243e/c05c/c5f6c8f866de1e2488e878bb565ee5b2?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Mr1V640QDXclDKADzFf0CgU84z5t55yDDnfSQ-eLunxpXkQ7SSVdtdbTjemaH53xANNeWAILYdwxHOPQ~YWa2U3~JushFqwWLllRCL5xaK7ogJPWBkp-52IB7NFRqFo2EHAtN6OiX9YUMYXb5~pYCVguK3i1hCvYs484ICLjr4Ps1kGJuk91VkXojqzEjkUHeCj0x4CAGXNSwJ9TmzmJ3-Z9giQMu5G2qaaeolgWCzae9fM6B-ZT6i~jkrJ-9IpR6fBrG2njvfJBx7EHsxRkM0kQ3yed-vnCPKSCNpHtcFJmBFH7BGaQWFaRTeu9u4KAFDqFBa6iHQcNYR~dLmt09g__");
+  background-size: cover;
+  background-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+.maindiv {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.video {
+  border: 2px solid var(--basic-color);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.play {
+  position: absolute;
+  transform: scale(0.1);
+}
+
+.tag {
+  position: absolute;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-weight: 500;
+  padding: 1vw;
+}
+
+.description {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5vw;
+  padding: 1.5vw 3vw;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.heading {
+  font-size: 2vw;
+  word-spacing: 2px;
+  background: white;
+  box-shadow: 0 0 30px 0px var(--basic-color);
+  border-radius: 25px;
+  padding: 0.6vw 2vw;
+  color: var(--basic-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+    .guide{
+        margin: 0vw 0vw 20vw;
+        height: 70vh;
+    }
+  .video {
+    width: 95%;
+  }
+  .description {
+    font-size: 2vw;
+  }
+  .heading {
+    font-size: 3vw;
+    padding: 1vw 2vw;
+  }
+}
+
+
+@media (max-width: 480px) {
+    .guide{
+        margin: 0vw 0vw 20vw;
+        height: 50vh;
+    }
+  .video {
+    width: 95%;
+  }
+  .description {
+    font-size: 2vw;
+  }
+  .heading {
+    font-size: 3.5vw;
+    padding: 1.5vw 5vw;
+  }
+}
