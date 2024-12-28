@@ -5,7 +5,7 @@ import Slide from './MiniComponents/Slide';
 import magnify from "../../assests/images/magnifyglass.png";
 import mobile from "../../assests/images/mobilenotify.png";
 import bitcoin from "../../assests/images/bitcoin.png";
-import technology from "../../assests/images/technology.png";
+import technology from "../../assests/images/technology.png"; 
 import security from "../../assests/images/security.png";
 import scalegraph from "../../assests/images/scalegraph.png";
 import networks from "../../assests/images/networks.png";

@@ -1,46 +1,91 @@
-.slide{
-    background-color:var(--slide-box);
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 95%;
-    /* margin-bottom:1.2vw ; */
-    /* gap: 5vw; */
-}
-.imgbox{
-    /* background: #000; */
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    width: 8%;
-    margin-left: -1vw;
- 
-}
-.imgbox img{
-    width: 100%;
-}
-.text{
-    /* background: red; */
-    padding: .8vw;
-    color: white;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    flex-direction: column;
-    gap: .2vw;
-    margin: .5vw;
+.slide {
+  background-color: var(--slide-box);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 95%;
 }
 
-.text h1{
-    font-size: 1.6vw;
-    font-weight: 500;
+.imgbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8%;
+  margin-left: -1vw;
 }
-.text h3{
-    font-size: 1.1vw;
-    font-weight: 100;
-    /* letter-spacing: 1px; */
+
+.imgbox img {
+  width: 100%;
 }
+
+.text {
+  padding: 0.8vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2vw;
+  margin: 0.5vw;
+}
+
+.text h1 {
+  font-size: 1.6vw;
+  font-weight: 500;
+}
+
+.text h3 {
+  font-size: 1.1vw;
+  font-weight: 100;
+}
+
+@media (max-width: 768px) {
+    .slide {
+      width: 100%;
+      /* flex-direction: column; */
+      border-radius: 10px;
+    }
+    .imgbox {
+      width: 20%;
+      padding: 2vw;
+      margin-left: -6vw;
+    }
+    .text {
+      padding: 1.2vw;
+      gap: 0.5vw;
+      margin: 1vw;
+    }
+    .text h1 {
+      font-size: 3.5vw;
+    }
+    .text h3 {
+      font-size: 2.3vw;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .slide {
+      width: 100%;
+      /* flex-direction: column; */
+      border-radius: 10px;
+    }
+    .imgbox {
+      width: 20%;
+      padding: 2vw;
+      margin-left: -6vw;
+    }
+    .text {
+      padding: 1.2vw;
+      gap: 0.5vw;
+      margin: 1vw;
+    }
+    .text h1 {
+      font-size: 3.5vw;
+    }
+    .text h3 {
+      font-size: 2.3vw;
+    }
+  }

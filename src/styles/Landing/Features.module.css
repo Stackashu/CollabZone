@@ -5,7 +5,7 @@
     font-family: "Spline Sans", serif;
     display: flex;
     flex-direction: column;
-    gap: 4vw;
+    gap: 5vw;
 }
 .upperdiv{
     /* background: red; */
@@ -26,7 +26,7 @@
     width: 80%;
     background-image: url("https://s3-alpha-sig.figma.com/img/bb58/8d70/1fe2624e78aa5d74259201d21f2ae455?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XzCZUPgVqxc8PQre97VeBhk~BwqvQshg80V1uLF5wNppNRt4X7gecI--~~ODoZDBc0H1L6HWfH78xH96lFNf13oPyo1lquxVOdK7FnIzgLPe0jmH0ol8xNOBN0Mukd3CMJp0zeCCvPnSUSAhGsTZsQGXggCxl5QU3JiRUG0yTkX-wPQDBCnWIqnmrNG6mLX3QkDQHmt9oC25F3CuyX3GrDVHrddL7Gi8ZkhE8NPBiZivLFqdOAMYja8g2IrqUcQVjgRCXyLpccZN3KPeazgG6lYEXfKWsOcjr4QK1yHnXKtGjj7r9R6LwOySEebPcBFEJA7CspyyhHkfAZ54vc643g__");
     display: flex;
-    margin: 2vw;
+    margin: 3vw;
     justify-content: center;
     align-items: center;
     background-size: cover;
@@ -37,7 +37,7 @@
 
 .lowerdiv{
     display: flex;
-    gap: 5vw;
+    gap: 4vw;
 }
 .lowerright{
     width: 100%;
@@ -68,7 +68,53 @@
     justify-content: center;
     align-items: center;
     padding: .8vw 1.7vw;
-    box-shadow: 0px 0px 50px 1px var(--basic-color);
+    box-shadow: 0px 0px 35px 0px var(--basic-color);
     border-radius: 30px;
     font-weight: 600;
+}
+
+@media (max-width: 768px){
+    .features{
+        margin: 0vw 5vw 20vw;
+        justify-content: center;
+        align-items: center;
+        gap: 10vw;
+    }
+    
+    .upperdiv{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10vw;
+    }
+    .upperleft{
+        width: 90%;
+        gap: 2vw;
+    }
+    .upperright {
+        padding: 25vw 20vw;
+        transform: scale(1.1) rotateY(180deg);
+    }
+    
+    .lowerdiv{
+        flex-direction: column;
+        gap: 10vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .lowerright{
+        gap: 2vw;
+        width: 90%;
+    }
+    .lowerleft{
+        padding: 25vw 20vw;
+        transform: scale(1.2) ;
+    }
+    .heading{
+        font-size: 5vw;
+        width: 65%;
+        border-radius: 100px;
+        padding: 1.3vw 2.2vw;
+        box-shadow: 0px 0px 15px 0px var(--basic-color);
+    }
 }
