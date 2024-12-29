@@ -6,9 +6,25 @@
   /* background: red; */
   width: 90%;
   font-family: "Spline Sans", serif;
+ 
+  z-index: 100;
+  /* background-color: transparent; */
+
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  transition: .1s;  
 }
+
+.activeScroll{
+  position: sticky;
+  top : 5px;
+  /* background-color: rgba(63, 92, 209, 1); */
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
 .logo {
-  width: 21%;
+  width: 30px;
   cursor: pointer;
 }
 .navbar { 
@@ -21,53 +37,110 @@
   overflow: hidden;
 }
 .navbar li {
-  font-size: 1.1vw;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   margin-right: 0.4vw;
-  /* font-style:"Spline Sans" ; */
+
 }
+
 .navbar li:hover {
-  color: rgba(63, 92, 209, 1);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 0.4vw;
+  background: linear-gradient(90deg, rgba(63, 92, 209, 1), rgba(255, 105, 180, 1));
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  color: transparent; 
+  transition: transform 0.3s ease; 
 }
+
+
+/* .navbar li:hover {
+  color: rgba(63, 92, 209, 1);
+} */
+
+
+
+
 
 .changecolor {
   color: rgba(63, 92, 209, 1);
 }
+/* .lefthead {
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  gap: 0.3vw;
+} */
+/* .lefthead h1 {
+  color: var(--basic-color);
+  font-style: "Spline Sans";
+  font-size: 1.4rem;
+  font-weight: 600;
+} */
+/* .lefthead h1 span {
+  font-size: 2rem;
+  font-weight: 900;
+} */
+
 .lefthead {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 0.3vw;
 }
+
 .lefthead h1 {
-  color: var(--basic-color);
-  font-style: "Spline Sans";
-  font-size: 1.6vw;
+  font-family: "Spline Sans", sans-serif; 
+  font-size: 2rem; 
   font-weight: 600;
+  background: linear-gradient(45deg, rgba(63, 92, 209, 1), rgba(255, 105, 180, 1)); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  display: inline-block;
+  transition: transform 0.3s ease; 
 }
+
+.lefthead h1:hover {
+  transform: scale(1.05);
+}
+
 .lefthead h1 span {
-  font-size: 2.2vw;
+  font-size: 2.5rem; 
   font-weight: 900;
 }
+
+
+
 .link1 {
   text-decoration: none;
   color: white;
   background: black;
-  font-size: 1.4vw;
+  /* font-size: 1.4vw; */
+  font-size: 1vw;
   padding: 0.9vw 1.2vw;
 }
+
+
 .link2 {
   text-decoration: none;
   color: rgba(63, 92, 209, 1);
   border: 2px solid rgba(63, 92, 209, 1);
-  font-size: 1.4vw;
+  font-size: 1vw;
   padding: 0.7vw 1vw;
   font-weight: 700;
 }
 .link2:hover {
   background: rgba(63, 92, 209, 0.1);
 }
+
+
+
+
+
 .righthead {
   display: flex;
   justify-content: center;
