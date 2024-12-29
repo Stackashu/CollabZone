@@ -12,8 +12,7 @@ import networks from "../../assests/images/networks.png";
 import coingraph from "../../assests/images/coingraph.png";
 import lightrocket from "../../assests/images/lightrocket.png";
 import hand from "../../assests/images/hand.png";
-import skills from "../../assests/images/skills.jpg";
-import setting from "../../assests/images/setting.jpg";
+
 
 const Features = () => {
   const featuresData1 = [
