@@ -1,7 +1,7 @@
 .outerbox {
-  padding: 2vw;
+  /* padding: 0vw; */
   background: white;
-  margin: 5vw;
+  margin: 1vw;
   font-family: "Spline Sans", serif;
   backdrop-filter: blur(1000px);
   background: white;
@@ -82,6 +82,9 @@
 
 .hero h1 {
   font-size: 3.3vw;
+  background: linear-gradient(90deg, rgba(63, 92, 209, 1), rgba(255, 105, 180, 1));
+  background-clip: text; 
+  color: transparent;
 }
 
 .hero h1 span {
@@ -99,6 +102,7 @@
   display: flex;
   background: white;
   padding: 0.6vw;
+  padding: 1vw;
   border-radius: 50px;
   justify-content: center;
   align-items: center;
