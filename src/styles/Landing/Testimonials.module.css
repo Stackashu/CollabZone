@@ -1,0 +1,164 @@
+.box {
+  margin: 0vw 0vw 10vw;
+  font-family: "Spline Sans", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vw;
+}
+
+.heading {
+  color: var(--basic-color);
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 0 45px 0 var(--basic-color);
+  padding: 0.8vw 2vw;
+  font-weight: 600;
+  font-size: 2vw;
+}
+
+.leftarrow {
+  border: solid var(--basic-color);
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 12px;
+  transform: rotate(135deg);
+  cursor: pointer;
+}
+
+.slider {
+  gap: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99vw;
+}
+
+.badgeContainer {
+  gap: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+  height: 20vh;
+}
+
+.rightarrow {
+  border: solid var(--basic-color);
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 12px;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 1.3vw;
+  height: 1.3vw;
+  background-color: var(--basic-color);
+  opacity: 0.5;
+  display: inline-block;
+}
+
+.circlecontainer {
+  margin-top: -4vw;
+  display: flex;
+  gap: 1vw;
+}
+
+.carousel {
+  display: flex;
+  /* background: red; */
+  width: 234vw;
+  padding: 0vw 0vw;
+  gap: 5vw;
+
+  transition: transform 1s ease-in;
+}
+
+.carouselcontainer {
+  width: 80%;
+  padding: 2vw;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .box {
+    margin: 1vw 0vw 20vw;
+    gap: 5vw;
+  }
+  .circle {
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    background-color: var(--basic-color);
+    opacity: 0.5;
+    display: inline-block;
+  }
+
+  .heading {
+    font-size: 3vw;
+  }
+
+  .slider {
+    width: 90vw;
+  }
+
+  .carousel {
+    width: 480vw;
+    gap: 4vw;
+  }
+
+  .carouselcontainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    margin: 0vw 0vw 20vw;
+    gap: 5vw;
+  }
+
+  .circlecontainer {
+    margin-top: -8vw;
+    display: flex;
+    gap: 2vw;
+  }
+  .heading {
+    font-size: 4vw;
+    padding: 1vw 3vw;
+  }
+
+  .slider {
+    width: 90vw;
+  }
+  .circle {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .carousel {
+    width: 450vw;
+    gap: 6vw;
+    padding: 9vw 0vw 0vw;
+    justify-content: center;
+    align-items: center;
+
+    /* background: red; */
+    /* background: yellow; */
+  }
+
+  .carouselcontainer {
+    width: 90%;
+    /* background: red; */
+  }
+  .rightarrow,
+  .leftarrow {
+    padding: 8px;
+  }
+}

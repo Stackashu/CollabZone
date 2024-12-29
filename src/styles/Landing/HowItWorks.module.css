@@ -37,7 +37,7 @@
   border-radius: 10px;
   position: relative;
   display: flex;
-  width: 80%;
+  width: 70%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -52,7 +52,11 @@
 
 .play {
   position: absolute;
+<<<<<<< HEAD
   transform: scale(0.035);
+=======
+  transform: scale(0.08);
+>>>>>>> 8181b67b71aec72d7c9b2d9c45bb7570209df2b9
 }
 
 .tag {
@@ -95,7 +99,7 @@
 
 @media (max-width: 768px) {
     .guide{
-        margin: 0vw 0vw 20vw;
+        margin: 0vw 0vw 10vw;
         height: 70vh;
     }
   .video {
@@ -113,7 +117,7 @@
 
 @media (max-width: 480px) {
     .guide{
-        margin: 0vw 0vw 20vw;
+        margin: 0vw 0vw 10vw;
         height: 50vh;
     }
   .video {
