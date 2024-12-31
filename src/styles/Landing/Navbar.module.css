@@ -152,12 +152,16 @@
     display: none;
   }
   .header2 {
+    bottom: 3%;
+    width: 90%;
+    left: 5%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px 1px;
     border-top: 2px solid rgba(63, 92, 209, 0.2);
     display: flex;
     position: fixed;
     z-index: 1;
-    bottom: 0;
-    width: 100%;
+    border-radius: 50px;
     /* margin: 3vw 5vw; */
     background: white;
     align-items: center;
@@ -314,8 +318,12 @@
     border-top: 2px solid rgba(63, 92, 209, 0.2);
     display: flex;
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    bottom: 3%;
+    width: 90%;
+    left: 5%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px 1px;
+    border-top: 2px solid rgba(63, 92, 209, 0.2);
     z-index: 1;
     /* margin: 3vw 5vw; */
     /* background: yellow; */

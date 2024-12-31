@@ -2,14 +2,24 @@
     width: 6%;
 }
 .points{
-    display:  flex;
+    display: flex;
     padding: .5vw 0vw;
-    /* background: red; */
     align-items: center;
     gap: 1vw;
 }
-
 .points h2{
     font-size: 1.1vw;
     color: white;
+}
+@media (max-width: 768px) {
+    .points img{
+        width: 6%;
+    }
+    .points{
+        padding: 1vw 0vw;
+        gap: 2vw;
+    }
+    .points h2{
+        font-size: 3vw;
+    }
 }

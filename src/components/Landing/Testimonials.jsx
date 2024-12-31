@@ -11,7 +11,7 @@ const Testimonials = () => {
   };
 
   const rightbutton = () => {
-    setIndex((prev) => (prev <= 1 ? prev + 1 : 0));
+    setIndex((prev) => (prev <= 10 ? prev + 1 : 0));
   };
   const Eclipse1 = () => {
     setIndex(0);

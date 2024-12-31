@@ -10,7 +10,7 @@
   margin: -3vw 0vw 5vw;
 }
 
-.left {
+.left { 
   border-radius: 8px;
   padding: 45vh 15vw;
   display: flex;
@@ -43,9 +43,10 @@
   .box {
     margin: -10vw 0vw 20vw;
     flex-direction: column;
-    height: auto;
+    height: 160vh;
     padding: 5vw 5vw;
     gap: 10vw;
+    justify-content: start;
   }
   .left {
     padding: 20vh 45vw;
@@ -67,7 +68,7 @@
       margin: -10vw 0vw 20vw;
       flex-direction: column;
       gap: 10vw;
-      height: auto;
+      height: 140vh;
       padding: 5vw 5vw;
     }
     .left {

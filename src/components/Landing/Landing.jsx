@@ -7,6 +7,7 @@ import HowItWorks from "./HowItWorks";
 import Testimonials from "./Testimonials";
 import Faq from "./Faq";
 import KeyFeatures from "./KeyFeatures";
+import Contact from "./Contact";
 
 const Landing = () => {
   return (
@@ -19,6 +20,7 @@ const Landing = () => {
       <Testimonials />
       <Faq />
       <KeyFeatures />
+      <Contact/>
     </div>
   );
 };
