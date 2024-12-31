@@ -99,10 +99,11 @@
         height: 70vh;
     }
   .video {
-    width: 95%;
+    width: 100%;
   }
   .description {
     font-size: 2vw;
+    padding: 2vw 3vw;
   }
   .heading {
     font-size: 3vw;
@@ -117,10 +118,11 @@
         height: 50vh;
     }
   .video {
-    width: 95%;
+    width: 100%;
   }
   .description {
     font-size: 2vw;
+    padding: 2vw 3vw;
   }
   .heading {
     font-size: 3.5vw;
