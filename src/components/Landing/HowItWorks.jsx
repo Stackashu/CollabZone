@@ -4,7 +4,7 @@ import style from "../../styles/Landing/HowItWorks.module.css";
 import guidevideo from "../../assests/images/guidevideo.jpg";
 import playbutton from "../../assests/images/playbutton.png";
 const HowItWorks = () => {
-  return (
+  return ( 
     <div className={`${style.guide}`}>
       {/* following bgdiv is for the background image of the guide section for prevention for doing low opacity and affect on the other elemnts also*/}
       <div className={`${style.bgdiv}`}></div>

@@ -8,11 +8,11 @@
   position: relative;
 }
 
-.smallEclipse {
+.smallEclipse { 
   position: absolute;
   right: 7%;
-  top: 4%;
-  width: 12vw;
+  top: 4%; 
+  width: 12vw; 
   height: 12vw;
   border-radius: 50%;
   background-color: var(--small-eclipse);

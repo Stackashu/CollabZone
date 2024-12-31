@@ -60,14 +60,14 @@
   }
 
   .downarrow {
-    bottom: -30%;
+    bottom: -20%;
     right: 10%;
   }
 
   .profile{
     width: 35%;
     height: 90%;
-    bottom: -130%;
+    bottom: -115%;
     right: -10%;
   }
 }

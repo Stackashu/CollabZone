@@ -3,7 +3,7 @@
   font-family: "Spline Sans", serif;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   flex-direction: column;
   gap: 5vw;
 }
@@ -26,6 +26,7 @@
   padding: 12px;
   transform: rotate(135deg);
   cursor: pointer;
+  z-index: 1;
 }
 
 .slider {
@@ -53,6 +54,7 @@
   padding: 12px;
   transform: rotate(-45deg);
   cursor: pointer;
+  z-index: 1;
 }
 
 .circle {
@@ -70,21 +72,26 @@
   gap: 1vw;
 }
 
-.carousel {
+.carouselcontainer{
   display: flex;
-  /* background: red; */
-  width: 234vw;
-  padding: 0vw 0vw;
-  gap: 5vw;
-
-  transition: transform 1s ease-in;
-}
-
-.carouselcontainer {
-  width: 80%;
-  padding: 2vw;
+  width: 85vw;
+  /* background: yellow; */
+  padding: 2vw 2vw;
   overflow: hidden;
+  position: relative;
+ 
 }
+.carousel{
+  /* background: red; */
+  display: flex;
+  transition: all 0.5s ease-in-out;
+  gap: 2vw;
+  
+  justify-content: space-around;
+  /* overflow-x: auto; */
+}
+
+
 
 @media (max-width: 768px) {
   .box {
@@ -102,6 +109,7 @@
 
   .heading {
     font-size: 3vw;
+    padding: 1vw 4vw;
   }
 
   .slider {
@@ -109,8 +117,8 @@
   }
 
   .carousel {
-    width: 480vw;
-    gap: 4vw;
+    
+    gap: 5vw;
   }
 
   .carouselcontainer {
@@ -121,7 +129,7 @@
 @media (max-width: 480px) {
   .box {
     margin: 0vw 0vw 20vw;
-    gap: 5vw;
+    gap: 1vw;
   }
 
   .circlecontainer {
@@ -131,11 +139,12 @@
   }
   .heading {
     font-size: 4vw;
-    padding: 1vw 3vw;
+    padding: 1vw 4vw;
   }
 
   .slider {
     width: 90vw;
+    gap: 2vw;
   }
   .circle {
     width: 3vw;
@@ -143,8 +152,7 @@
   }
 
   .carousel {
-    width: 450vw;
-    gap: 6vw;
+    gap: 7vw;
     padding: 9vw 0vw 0vw;
     justify-content: center;
     align-items: center;
@@ -154,7 +162,7 @@
   }
 
   .carouselcontainer {
-    width: 90%;
+    width: 95vw;
     /* background: red; */
   }
   .rightarrow,

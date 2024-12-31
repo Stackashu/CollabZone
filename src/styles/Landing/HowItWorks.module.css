@@ -96,7 +96,7 @@
 @media (max-width: 768px) {
     .guide{
         margin: 0vw 0vw 10vw;
-        height: 70vh;
+        height: 60vh;
     }
   .video {
     width: 100%;
@@ -106,8 +106,8 @@
     padding: 2vw 3vw;
   }
   .heading {
-    font-size: 3vw;
-    padding: 1vw 2vw;
+    font-size: 2.5vw;
+    padding: 1.2vw 4vw;
   }
 }
 
@@ -115,17 +115,17 @@
 @media (max-width: 480px) {
     .guide{
         margin: 0vw 0vw 10vw;
-        height: 50vh;
+        height: 45vh;
     }
   .video {
     width: 100%;
   }
-  .description {
+  .description { 
     font-size: 2vw;
     padding: 2vw 3vw;
   }
   .heading {
-    font-size: 3.5vw;
+    font-size: 2.8vw;
     padding: 1.5vw 5vw;
   }
 }

@@ -11,8 +11,8 @@ const Home = () => {
   const heading2 = "Anylatics Dashboard"
   const heading3 = "Tracking the progress of project"
   const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+    e.preventDefault(); 
+  }; 
   
   return ( 
     <div className={`${style.outerbox}`}>

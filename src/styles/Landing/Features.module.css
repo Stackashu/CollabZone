@@ -95,7 +95,7 @@
         padding: 25vw 20vw;
         transform: scale(1.1) rotateY(180deg);
     }
-    
+     
     .lowerdiv{
         flex-direction: column;
         gap: 10vw;
@@ -111,10 +111,10 @@
         transform: scale(1.2) ;
     }
     .heading{
-        font-size: 5vw;
-        width: 65%;
+        font-size: 3vw;
+        width: 40%;
         border-radius: 100px;
-        padding: 1.3vw 2.2vw;
+        padding: 1.3vw 0vw;
         box-shadow: 0px 0px 15px 0px var(--basic-color);
     }
 }

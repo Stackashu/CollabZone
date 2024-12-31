@@ -7,20 +7,20 @@ const Testimonials = () => {
   const [index, setIndex] = useState(0);
 
   const leftbutton = () => {
-    setIndex((prev) => (prev > 0 ? prev - 1 : 2));
+    setIndex((prev) => (prev > 0 ? prev - 1 : 4));
   };
 
   const rightbutton = () => {
-    setIndex((prev) => (prev <= 10 ? prev + 1 : 0));
+    setIndex((prev) => (prev <= 3 ? prev + 1 : 0));
   };
   const Eclipse1 = () => {
     setIndex(0);
   };
   const Eclipse2 = () => {
-    setIndex(1);
+    setIndex(2);
   };
   const Eclipse3 = () => {
-    setIndex(2);
+    setIndex(4);
   };
   return (
     <div className={style.box}>
@@ -30,27 +30,11 @@ const Testimonials = () => {
         <div onClick={leftbutton} className={style.leftarrow}></div>
 
         <div className={`${style.carouselcontainer}`}>
-          <div
-            className={`${style.carousel}`}
-            style={{
-              transform: `translateX(-${
-                index *
-                (window.innerWidth < 768
-                  ? window.innerWidth < 480
-                    ? 17
-                    : 1
-                  : window.innerWidth < 1024
-                  ? 50
-                  : 34)
-              }%)`,
-            }}
-          >
+          <div className={`${style.carousel}`} style={{  transform: `translateX(-${  index *  (window.innerWidth < 768  ? window.innerWidth < 480 ? 17 : 40  : window.innerWidth < 1024? 50 : 17) }%)`,}}>
             <FeedbackBadge />
             <FeedbackBadge />
-
             <FeedbackBadge />
             <FeedbackBadge />
-
             <FeedbackBadge />
             <FeedbackBadge />
           </div>

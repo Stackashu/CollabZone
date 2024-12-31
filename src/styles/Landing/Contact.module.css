@@ -125,7 +125,7 @@ button {
   background-color: rgba(63, 92, 209, 0.96);
   border: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 2vw;
   color: white;
@@ -141,7 +141,7 @@ button img {
 @media (max-width: 768px) {
   .box {
     gap: 8vw;
-    margin: 8vw 0vw 15vw;
+    margin: 8vw 0vw 25vw;
     padding: 0vw 4vw;
   }
   .formbox1 {
@@ -196,11 +196,12 @@ button img {
     font-size: 2.5vw;
   }
   button {
-    font-size: 2vw;
-    padding: 0.8vw 0vw;
+    font-size: 2.7vw;
+ 
+    padding: 2vw 2vw;
   }
   button img {
-    width: 20%;
+    width: 16%;
     
   }
 }
@@ -209,7 +210,7 @@ button img {
 @media (max-width: 480px) {
   .box {
     gap: 8vw;
-    margin: 8vw 0vw 15vw;
+    margin: 8vw 0vw 25vw;
     padding: 0vw 4vw;
   }
   .formbox1 {
@@ -265,11 +266,14 @@ button img {
 
   }
   button {
-    font-size: 2vw;
-    padding: 0.8vw 0vw;
+    font-size: 3.5vw;
+    padding: 1vw 0vw;
+    
   }
   button img {
-    width: 20%;
+    width: 16%;
+  
+    
     
   }
 }

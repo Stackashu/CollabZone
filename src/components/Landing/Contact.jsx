@@ -11,7 +11,7 @@ const Contact = () => {
   const [describe, setDescribe] = useState('');
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
   
   }
 

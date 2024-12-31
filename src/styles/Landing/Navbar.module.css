@@ -157,7 +157,7 @@
     left: 5%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px 1px;
-    border-top: 2px solid rgba(63, 92, 209, 0.2);
+    border-top: 4px solid rgba(63, 92, 209, 0.2);
     display: flex;
     position: fixed;
     z-index: 1;
@@ -223,6 +223,8 @@
     transition: all 0.5s;
   }
   .mainnavup {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     border-top: 2px solid rgba(63, 92, 209, 0.2);
     display: flex;
     background: white;
@@ -236,6 +238,9 @@
     gap: 5vw;
     top: -335px;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px 1px;
+   
   }
   .navbar2 {
     background: white;
@@ -315,12 +320,12 @@
     display: none;
   }
   .header2 {
-    border-top: 2px solid rgba(63, 92, 209, 0.2);
+    border-top: 5px solid rgba(63, 92, 209, 0.2);
     display: flex;
     position: fixed;
     bottom: 3%;
-    width: 90%;
-    left: 5%;
+    width: 95%;
+    left: 3%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px 1px;
     border-top: 2px solid rgba(63, 92, 209, 0.2);
@@ -328,7 +333,7 @@
     /* margin: 3vw 5vw; */
     /* background: yellow; */
     align-items: center;
-    padding: 4vw 4vw;
+    padding: 3vw 5vw;
     justify-content: space-between;
     font-family: "Spline Sans", serif;
   }
@@ -378,9 +383,12 @@
     gap: 2vw;
     top: 100px;
     width: 100%;
+
   }
 
   .mainnavup {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     border-top: 2px solid rgba(63, 92, 209, 0.2);
     display: flex;
     background: white;
@@ -394,6 +402,10 @@
     gap: 2vw;
     top: -190px;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px 1px;
+   
+
   }
   .navbar2 {
     background: white;

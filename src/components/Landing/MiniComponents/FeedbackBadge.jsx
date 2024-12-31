@@ -18,7 +18,7 @@ const FeedbackBadge = () => {
           <h2>Ashish Verma</h2>
           <div className={`${style.stars}`}>
             <img src={star} alt="star" />
-            <img src={star} alt="star" />
+            <img src={star} alt="star" /> 
             <img src={star} alt="star" />
             <img src={star} alt="star" />
             <img src={halfstar} alt="halfstar" />
