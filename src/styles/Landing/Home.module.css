@@ -102,7 +102,7 @@
   display: flex;
   background: white;
   padding: 0.6vw;
-  padding: 1vw;
+  /* padding: 1vw; */
   border-radius: 50px;
   justify-content: center;
   align-items: center;
@@ -119,10 +119,13 @@
   padding: 0vw 1vw;
   font-weight: 700;
   outline: none;
+  color: rgb(78, 78, 78);
 }
 
 .form input::placeholder {
-  color: rgb(150, 148, 148);
+  color: rgb(122, 122, 122);
+  
+
 }
 
 .form button {
@@ -301,46 +304,46 @@
 
   @keyframes badge1 {
     0% {
-      top: 95%;
+      top: 90%;
     }
     25% {
-      top: 100%;
+      top: 95%;
     }
     75% {
-      top: 102%;
+      top: 100%;
     }
     100% {
-      top: 95%;
+      top: 90%;
     }
   }
   
   @keyframes badge2 {
     0% {
-      top: 108%;
-    }
-    25% {
       top: 110%;
     }
+    25% {
+      top: 115%;
+    }
     75% {
-      top: 112%;
+      top: 120%;
     }
     100% {
-      top: 108%;
+      top: 110%;
     }
   }
   
   @keyframes badge3 {
     0% {
-      top: 98%;
+      top: 95%;
     }
     25% {
       top: 100%;
     }
     75% {
-      top: 102%;
+      top: 105%;
     }
     100% {
-      top: 98%;
+      top: 95%;
     }
   }
   
@@ -445,46 +448,46 @@
 
   @keyframes badge1 {
     0% {
-      top: 75%;
+      top: 95%;
     }
     25% {
-      top: 80%;
+      top: 100%;
     }
     75% {
-      top: 82%;
+      top: 105%;
     }
     100% {
-      top: 75%;
+      top: 95%;
     }
   }
   
   @keyframes badge2 {
     0% {
-      top: 108%;
+      top: 135%;
     }
     25% {
-      top: 110%;
+      top: 130%;
     }
     75% {
-      top: 112%;
+      top: 125%;
     }
     100% {
-      top: 108%;
+      top: 135%;
     }
   }
   
   @keyframes badge3 {
     0% {
-      top: 93%;
+      top: 115%;
     }
     25% {
-      top: 95%;
+      top: 120%;
     }
     75% {
-      top: 97%;
+      top: 125%;
     }
     100% {
-      top: 93%;
+      top: 115%;
     }
   }
   

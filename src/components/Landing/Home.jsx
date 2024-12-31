@@ -13,7 +13,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
- 
+  
   return ( 
     <div className={`${style.outerbox}`}>
       <div className={`${style.innerbox}`}>

@@ -1,6 +1,6 @@
 .box {
   background: var(--Faq-bg);
-  padding: 5vw 7vw 15vw;
+  padding: 12vw 7vw 15vw;
   gap: 4vw;
   display: flex;
   font-family: "Spline Sans", serif;

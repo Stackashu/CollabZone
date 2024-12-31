@@ -13,11 +13,11 @@ const Questions = ({question,answer}) => {
   return (
     <div className={`${style.container}`}>
       <div className={`${style.quest}`}>
-        <h2>{question}</h2>
+        <h2 style={{fontSize:"1.3"}}>{question}</h2>
        <img onClick={openQs} style={{ transform: up ? 'rotate(-90deg)' : 'rotate(90deg)' }} src={arrow} alt="arrow" />
       </div>
-      <div className={`${style.ans}`}>
-       <p style={{display:up? "": "none"}}>{answer}</p>
+      <div style={{height: up? "0px" : "10vh"}} className={`${style.ans}`}>
+       <p style={{display:up? "": "none", }}>{answer}</p>
       </div>
     </div>
   );

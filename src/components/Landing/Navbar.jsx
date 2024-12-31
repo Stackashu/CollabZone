@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import style from "../../styles/Landing/Navbar.module.css";
-import logo from "../../assests/images/CollabLogo.png";
 import { NavLink } from "react-router-dom";
 import "../../App.css";
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
@@ -67,7 +66,7 @@ const Navbar = () => {
       <header className={`${style.header2}`}>
 
         <div className={`${style.lefthead2}`}>
-          <img className={`${style.logo2}`} loading="lazy" src={logo} alt="CollabZone logo" />
+          {/* <img className={`${style.logo2}`} loading="lazy" src={logo} alt="CollabZone logo" /> */}
           <h1>
             <span>C</span>ollab<span>Z</span>one
           </h1>

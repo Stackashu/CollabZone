@@ -6,6 +6,7 @@ import Features from "./Features";
 import HowItWorks from "./HowItWorks";
 import Testimonials from "./Testimonials";
 import Faq from "./Faq";
+import KeyFeatures from "./KeyFeatures";
 
 const Landing = () => {
   return (
@@ -15,8 +16,9 @@ const Landing = () => {
       <Hero />
       <Features />
       <HowItWorks />
-     <Testimonials/>
-     <Faq/>
+      <Testimonials />
+      <Faq />
+      <KeyFeatures />
     </div>
   );
 };

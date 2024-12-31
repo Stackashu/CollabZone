@@ -6,28 +6,30 @@
   /* background: red; */
   width: 90%;
   font-family: "Spline Sans", serif;
- 
+
   z-index: 100;
   /* background-color: transparent; */
 
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: 50px;
-  transition: .1s;  
+  transition: 0.1s;
 }
 
-.activeScroll{
+.activeScroll {
+  transition: all 0.5s;
   position: sticky;
-  top : 5px;
+  top: 15px;
   /* background-color: rgba(63, 92, 209, 1); */
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .logo {
   width: 30px;
   cursor: pointer;
 }
-.navbar { 
+.navbar {
   display: flex;
   /* justify-content: center; */
   /* align-items: center; */
@@ -41,7 +43,6 @@
   font-weight: 500;
   cursor: pointer;
   margin-right: 0.4vw;
-
 }
 
 .navbar li:hover {
@@ -49,21 +50,20 @@
   font-weight: 500;
   cursor: pointer;
   margin-right: 0.4vw;
-  background: linear-gradient(90deg, rgba(63, 92, 209, 1), rgba(255, 105, 180, 1));
-  -webkit-background-clip: text; 
-  background-clip: text; 
-  color: transparent; 
-  transition: transform 0.3s ease; 
+  background: linear-gradient(
+    90deg,
+    rgba(63, 92, 209, 1),
+    rgba(255, 105, 180, 1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: transform 0.3s ease;
 }
-
 
 /* .navbar li:hover {
   color: rgba(63, 92, 209, 1);
 } */
-
-
-
-
 
 .changecolor {
   color: rgba(63, 92, 209, 1);
@@ -93,15 +93,19 @@
 }
 
 .lefthead h1 {
-  font-family: "Spline Sans", sans-serif; 
-  font-size: 2rem; 
+  font-family: "Spline Sans", sans-serif;
+  font-size: 2rem;
   font-weight: 600;
-  background: linear-gradient(45deg, rgba(63, 92, 209, 1), rgba(255, 105, 180, 1)); 
+  background: linear-gradient(
+    45deg,
+    rgba(63, 92, 209, 1),
+    rgba(255, 105, 180, 1)
+  );
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent; 
+  color: transparent;
   display: inline-block;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .lefthead h1:hover {
@@ -109,11 +113,9 @@
 }
 
 .lefthead h1 span {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   font-weight: 900;
 }
-
-
 
 .link1 {
   text-decoration: none;
@@ -123,7 +125,6 @@
   font-size: 1vw;
   padding: 0.9vw 1.2vw;
 }
-
 
 .link2 {
   text-decoration: none;
@@ -136,10 +137,6 @@
 .link2:hover {
   background: rgba(63, 92, 209, 0.1);
 }
-
-
-
-
 
 .righthead {
   display: flex;
@@ -157,7 +154,7 @@
   .header2 {
     border-top: 2px solid rgba(63, 92, 209, 0.2);
     display: flex;
-    position:fixed;
+    position: fixed;
     z-index: 1;
     bottom: 0;
     width: 100%;
@@ -179,7 +176,7 @@
     width: 25%;
     cursor: pointer;
   }
-  
+
   .button {
     font-size: 50px;
   }
@@ -188,7 +185,15 @@
   }
 
   .lefthead2 h1 {
-    color: var(--basic-color);
+    /* color: var(--basic-color); */
+    background: linear-gradient(
+      45deg,
+      rgba(63, 92, 209, 1),
+      rgba(255, 105, 180, 1)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-style: "Spline Sans";
     font-size: 3.5vw;
     font-weight: 600;
@@ -259,8 +264,15 @@
     gap: 2vw;
   }
 
-  .navbar2 li h4 {
-    /* color: var(--basic-color); */
+  .navbar2 li :hover {
+    background: linear-gradient(
+      45deg,
+      rgba(63, 92, 209, 1),
+      rgba(255, 105, 180, 1)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
   .navbar ul {
     display: flex;
@@ -292,7 +304,6 @@
   .link2:hover {
     background: rgba(63, 92, 209, 0.1);
   }
- 
 }
 
 @media (max-width: 480px) {
@@ -314,7 +325,7 @@
     font-family: "Spline Sans", serif;
   }
   .lefthead2 {
-    margin-left: -8vw;
+    /* margin-left: -8vw; */
     /* background: #000; */
     display: flex;
     justify-content: center;
@@ -329,7 +340,14 @@
   }
 
   .lefthead2 h1 {
-    color: var(--basic-color);
+    background: linear-gradient(
+      45deg,
+      rgba(63, 92, 209, 1),
+      rgba(255, 105, 180, 1)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-style: "Spline Sans";
     font-size: 5vw;
     font-weight: 600;
@@ -396,8 +414,15 @@
     font-size: 3vw;
     gap: 2vw;
   }
-  .navbar2 li h4:hover {
-    color: var(--basic-color);
+  .navbar2 li :hover {
+    background: linear-gradient(
+      45deg,
+      rgba(63, 92, 209, 1),
+      rgba(255, 105, 180, 1)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
   .navbar ul {
     display: flex;

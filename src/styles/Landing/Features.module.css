@@ -60,10 +60,10 @@
     width: 100%;
 }
 .heading{
-    font-size: 1.7vw;
+    font-size: 1.4vw;
     color: var(--basic-color);
     /* background: red; */
-    width: 23%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;

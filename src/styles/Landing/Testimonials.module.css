@@ -13,9 +13,9 @@
   background: white;
   border-radius: 30px;
   box-shadow: 0 0 45px 0 var(--basic-color);
-  padding: 0.8vw 2vw;
+  padding: 0.7vw 2vw;
   font-weight: 600;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .leftarrow {

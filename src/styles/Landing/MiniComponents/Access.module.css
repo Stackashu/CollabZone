@@ -1,0 +1,15 @@
+.points img{
+    width: 6%;
+}
+.points{
+    display:  flex;
+    padding: .5vw 0vw;
+    /* background: red; */
+    align-items: center;
+    gap: 1vw;
+}
+
+.points h2{
+    font-size: 1.1vw;
+    color: white;
+}
