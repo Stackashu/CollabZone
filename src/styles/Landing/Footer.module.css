@@ -12,7 +12,7 @@
 
 .up {
   display: flex;
-  gap: 2vw;
+  gap: 0vw;
   justify-content: center;
   width: 100%;
 }
@@ -36,6 +36,7 @@
 
 .right h4 {
   width: 70%;
+  font-weight: 400;
   font-size: 1.1vw;
 }
 
