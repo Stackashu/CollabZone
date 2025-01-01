@@ -63,7 +63,7 @@ const Navbar = () => {
 
       {/* mobile and tablet view code  */}
 
-      <header className={`${style.header2}`}>
+      <header className={`${style.header2} `} >
 
         <div className={`${style.lefthead2}`}>
           {/* <img className={`${style.logo2}`} loading="lazy" src={logo} alt="CollabZone logo" /> */}

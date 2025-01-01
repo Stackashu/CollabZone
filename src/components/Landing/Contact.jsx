@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import style from "../../styles/Landing/Contact.module.css";
 import "../../App.css";
-import contactimg from "../../assests/images/contactimg.jpg";
+import contactimg from "../../assests/images/newcontact.png";
 import contactarrow from "../../assests/images/contactarrow.png";
 
 const Contact = () => {
@@ -10,7 +10,7 @@ const Contact = () => {
   const [subject, setSubject] = useState('');
   const [describe, setDescribe] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) => { 
     e.preventDefault(); 
   
   }
@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
 
         <div className={`${style.right}`}>
-          <form onSubmit={handleSubmit}>
+          <form className={`${style.formm1}`} onSubmit={handleSubmit}>
             <div className={`${style.formbox1}`}>
               <label>Name</label>
               <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} placeholder='Enter your name' />

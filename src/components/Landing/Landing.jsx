@@ -8,6 +8,7 @@ import Testimonials from "./Testimonials";
 import Faq from "./Faq";
 import KeyFeatures from "./KeyFeatures";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const Landing = () => {
   return (
@@ -21,6 +22,7 @@ const Landing = () => {
       <Faq />
       <KeyFeatures />
       <Contact/>
+      <Footer/>
     </div>
   );
 };

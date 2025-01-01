@@ -13,7 +13,7 @@ import coingraph from "../../assests/images/coingraph.png";
 import lightrocket from "../../assests/images/lightrocket.png";
 import hand from "../../assests/images/hand.png";
 
-
+ 
 const Features = () => {
   const featuresData1 = [
   { heading: 'Partner Search', subHeading: 'Connect with like-minded entrepreneurs based on skills and interests.', image: magnify },
