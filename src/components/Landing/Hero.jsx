@@ -1,7 +1,6 @@
 import React from "react";
 import "../../App.css";
 import style from "../../styles/Landing/Hero.module.css";
-import lady from "../../assests/images/lady.jpg";
 import fb from "../../assests/images/fb.png";
 import twitter from "../../assests/images/twitterx.png";
 import linkedin from "../../assests/images/linkdedin.png"

@@ -5,14 +5,14 @@
   display: flex;
   font-family: "Spline Sans", serif;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   height: 120vh;
   margin: -3vw 0vw 5vw;
 }
 
 .left { 
   border-radius: 8px;
-  padding: 45vh 15vw;
+  padding: 45vh 15vw; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@
   .box {
     margin: -10vw 0vw 20vw;
     flex-direction: column;
-    height: 160vh;
+    height: 130vh;
     padding: 5vw 5vw;
     gap: 10vw;
     justify-content: start;
@@ -68,7 +68,7 @@
       margin: -10vw 0vw 20vw;
       flex-direction: column;
       gap: 10vw;
-      height: 140vh;
+      height: 95vh;
       padding: 5vw 5vw;
     }
     .left {

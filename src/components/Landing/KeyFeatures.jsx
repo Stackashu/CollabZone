@@ -3,7 +3,7 @@ import "../../App.css";
 import style from "../../styles/Landing/keyFeatures.module.css";
 import keyFeature from "../../assests/images/keyFeature.png";
 import keyarrow from "../../assests/images/keyarrow.png";
-import Access from "./MiniComponents/Access";
+import Access from "./MiniComponents/Access"; 
 
 const KeyFeatures = () => {
 

@@ -1,7 +1,7 @@
 .slide {
   background-color: var(--slide-box);
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   display: flex;
@@ -12,14 +12,20 @@
 
 .imgbox {
   display: flex;
+  background: white;
+  padding: 1vw;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
-  width: 8%;
-  margin-left: -1vw;
+  width: 12%;
+  /* height: 40%; */
+  margin-left: -3vw;
+  box-shadow: -5px 0px 10px rgba(0, 0, 255, 0.2);
 }
-
+ 
 .imgbox img {
   width: 100%;
+  height: auto;
 }
 
 .text {

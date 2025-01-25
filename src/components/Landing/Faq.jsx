@@ -12,7 +12,7 @@ const Faq = () => {
     {
       quest: "Is there a cost to use CollabZone?",
       ans: "",
-    },
+    }, 
     {
       quest: "How can I find partners on CollabZone?",
       ans: "",
@@ -22,7 +22,7 @@ const Faq = () => {
       quest: "How does project management work on the platform?",
       ans: "",
     },
-
+ 
     {
       quest: "Is there a cost to use CollabZone?",
       ans: "",

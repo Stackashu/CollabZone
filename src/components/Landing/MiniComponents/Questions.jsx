@@ -5,7 +5,7 @@ import arrow from "../../../assests/images/arrow.png";
 
 const Questions = ({question,answer}) => {
     const [up, setUp] = useState(false)
-
+ 
     const openQs = ()=>{
         setUp((prev)=>!prev)
     }
@@ -14,13 +14,14 @@ const Questions = ({question,answer}) => {
     <div className={`${style.container}`}>
       <div className={`${style.quest}`}>
         <h2 style={{fontSize:"1.3"}}>{question}</h2>
-       <img onClick={openQs} style={{ transform: up ? 'rotate(-90deg)' : 'rotate(90deg)' }} src={arrow} alt="arrow" />
+       <img onClick={openQs} style={{ transform: up ? 'rotate(-90deg)' : 'rotate(90deg)' } } src={arrow} alt="arrow" />
       </div>
-      <div style={{height: up? "0px" : "10vh"}} className={`${style.ans}`}>
+      <div  className={`${style.ans} ${up ? style.show : ''}`}>
        <p style={{display:up? "": "none", }}>{answer}</p>
       </div>
     </div>
   );
 };
-
+ 
 export default Questions;
+  

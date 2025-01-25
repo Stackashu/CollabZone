@@ -11,5 +11,5 @@ const Access = ({point}) => {
     </div>
   )
 }
-
+ 
 export default Access

@@ -10,10 +10,13 @@ import FeaturedPlayListOutlinedIcon from '@mui/icons-material/FeaturedPlayListOu
 import DocumentScannerOutlinedIcon from '@mui/icons-material/DocumentScannerOutlined';
 import GamepadOutlinedIcon from '@mui/icons-material/GamepadOutlined';
 
-const Navbar = () => {
+const Navbar = ({scrollToSection }) => {
+
+
   const [isOpen, setIsOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
 
+  
   const handleScroll = () => {
     const scrollTop = window.scrollY;
     if (scrollTop > 50) {
@@ -23,7 +26,7 @@ const Navbar = () => {
       setIsScroll(false);
     }
   }
-
+ 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -43,11 +46,11 @@ const Navbar = () => {
 
         <nav>
           <ul className={`${style.navbar} `}>
-            <li>Home</li>
-            <li>Features</li>
-            <li>How It Works</li>
-            <li>Testimonials</li>
-            <li>FAQs</li>
+          <li onClick={() => scrollToSection('home')}>Home</li>
+        <li onClick={() => scrollToSection('features')}>Features</li>
+        <li onClick={() => scrollToSection('howItWorks')}>How It Works</li>
+        <li onClick={() => scrollToSection('testimonials')}>Testimonials</li>
+        <li onClick={() => scrollToSection('faq')}>FAQ</li>
           </ul>
         </nav>
 
@@ -78,22 +81,22 @@ const Navbar = () => {
 
         {/* navbar pallete  for up and down*/}
         <nav className={`${style.mainnav} ${isOpen ? style.mainnavup : " "} `}>
-          <ul className={`${style.navbar2}`}>
-            <li><HomeOutlinedIcon style={{ fontSize: 30 }} /> <h4>Home</h4></li>
-            <li><FeaturedPlayListOutlinedIcon style={{ fontSize: 30 }} /><h4>Features</h4></li>
-            <li><QuestionMarkOutlinedIcon style={{ fontSize: 30 }} /><h4>How It Works</h4></li>
-            <li><DocumentScannerOutlinedIcon style={{ fontSize: 30 }} /><h4>Testimonials</h4></li>
-            <li><LiveHelpOutlinedIcon style={{ fontSize: 30 }} /><h4>FAQs</h4></li>
+          <ul className={`${isOpen ? style.navbar22 : style.navbar2} ` }>
+            <li onClick={() => scrollToSection('home')} ><HomeOutlinedIcon style={{ fontSize: 30 }} /> <h4>Home</h4></li>
+            <li onClick={() => scrollToSection('features')} ><FeaturedPlayListOutlinedIcon style={{ fontSize: 30 }} /><h4>Features</h4></li>
+            <li onClick={() => scrollToSection('howItWorks')}><QuestionMarkOutlinedIcon style={{ fontSize: 30 }} /><h4>How It Works</h4></li>
+            <li onClick={() => scrollToSection('testimonials')}><DocumentScannerOutlinedIcon style={{ fontSize: 30 }} /><h4>Testimonials</h4></li>
+            <li onClick={() => scrollToSection('faq')}><LiveHelpOutlinedIcon style={{ fontSize: 30 }} /><h4>FAQs</h4></li>
           </ul>
-          <div className={`${style.linkbox}`}>
+          <div className={`${isOpen? style.linkboxhide :style.linkbox}`}>
             <NavLink className={`${style.link1}`} to="#">
               Get Started for FREE
             </NavLink>
             <NavLink className={`${style.link2}`} to="#">
               Log in
-            </NavLink>
+            </NavLink> 
           </div>
-          <CloseOutlinedIcon className={`${style.cross}`} onClick={() => setIsOpen(false)} />
+          <CloseOutlinedIcon className={`${isOpen? style.crosshide : style.cross}`} onClick={() => setIsOpen(false)} />
 
         </nav>
       </header>

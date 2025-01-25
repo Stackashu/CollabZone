@@ -18,7 +18,7 @@ const HowItWorks = () => {
 
           <img loading="lazy" className={`${style.play}`} src={playbutton} alt={playbutton} />
           {/* change this image to video */}
-          <img loading="lazy" src={guidevideo} alt="video"></img>
+          <iframe className={`${style.videoplay}`} src="https://www.youtube.com/embed/WPni755-Krg?si=1TMdzX0_UIxgydPG"  frameborder="0" allow=" autoplay;  " referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div className={`${style.description}`}>
             Welcome to CollabZone! This video tutorial is tailored for new
             users, guiding you through the platform. In just a few minutes,
@@ -30,5 +30,5 @@ const HowItWorks = () => {
     </div>
   );
 };
-
+ 
 export default HowItWorks;

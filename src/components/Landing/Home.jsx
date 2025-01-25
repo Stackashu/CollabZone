@@ -20,7 +20,7 @@ const Home = () => {
                <div className={`${style.smallEclipse}`}></div>
                <div className={`${style.largEclipse}`}></div>
             <div className={`${style.hero}`}>
-              <h1>
+              <h1> 
                 Find Your Perfect Startup <span>Partner</span> Today!
               </h1>
               <h3>

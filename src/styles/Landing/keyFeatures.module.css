@@ -2,27 +2,32 @@
   margin: -8vw 0vw 5vw;
   padding: 0vw 10vw 5vw;
   font-family: "Spline Sans", serif;
+  /* background: red; */
 }
 
 .innerbox {
   background: rgba(63, 92, 209, 1);
   border-radius: 10px;
-  padding: 4vw 0vw 0vw;
+  padding:1vw;
   display: flex;
   justify-content: center;
-  align-items: start;
+  /* background: yellow; */
+  align-items: center;
   gap: 1vw;
 }
 
 .left {
-  width: 40%;
+  /* background: red; */
+  margin: 2vw;
+  height: 70vh;
+  width: 40%; 
   display: flex;
   flex-direction: column;
   gap: 2vw;
 }
 
 .left h1 {
-  text-align: left;
+  text-align: left;  
   color: rgb(255, 255, 255);
   font-size: 3.2vw;
   font-weight: 500;
@@ -41,8 +46,9 @@
 }
 
 .left img {
-  margin: -8vw 0vw 0vw -8vw;
-  transform: scale(0.6) rotateY(180deg);
+  margin: -5vw 0vw 0vw -5vw;
+  transform: scale(.7) rotateY(180deg);
+  /* background: yellow; */
 }
 
 .right {

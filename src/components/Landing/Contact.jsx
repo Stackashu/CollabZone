@@ -14,8 +14,8 @@ const Contact = () => {
     e.preventDefault(); 
   
   }
-
-  return (
+ 
+  return ( 
     <div className={`${style.box}`}>
 
       <h1 className={`${style.heading}`}>Contact Us</h1>
@@ -26,7 +26,7 @@ const Contact = () => {
           <h2>Our team will connect with you shortly to assist you with your inquiries.</h2>
           <img src={contactimg} alt={contactimg} />
         </div>
-
+ 
         <div className={`${style.right}`}>
           <form className={`${style.formm1}`} onSubmit={handleSubmit}>
             <div className={`${style.formbox1}`}>

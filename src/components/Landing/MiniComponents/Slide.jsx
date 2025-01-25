@@ -18,3 +18,4 @@ const Slide = ({image,heading,subHeading}) => {
 }
 
 export default Slide
+    

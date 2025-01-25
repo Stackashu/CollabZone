@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 3vw 0vw;
+  padding: 3vw 0vw 0.5vw;
   font-family: "Spline Sans", serif;
 }
 
@@ -16,15 +16,47 @@
   justify-content: center;
   width: 100%;
 }
+.notes {
+  /* background: #000; */
+}
+.openertray h2 {
+  color: white;
+  font-size: 0.9vw;
+}
 
+.notes li {
+  list-style: none;
+  color: white;
+  font-size: 0.7vw;
+  margin: 0.7vw 0;
+  opacity: 0.5;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-weight: 200;
+ 
+}
+
+.notes li:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.miniPoints div {
+  /* background: red; */
+  display: flex;
+  justify-content: start;
+  gap: 3vw;
+}
 .left {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
 }
 
 .left h1 {
   font-size: 3.5vw;
-  color: rgba(255, 255, 255, 0.842);
-  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 1);
 }
 
 .right {
@@ -33,11 +65,15 @@
   flex-direction: column;
   gap: 0.6vw;
 }
+.right h3 {
+  font-size: 1.8vw;
+}
 
 .right h4 {
   width: 70%;
+  opacity: 0.6;
   font-weight: 400;
-  font-size: 1.1vw;
+  font-size: 1vw;
 }
 
 .formm {
@@ -51,22 +87,23 @@
 .inputt {
   width: 100%;
   background-color: rgba(206, 214, 245, 0.9);
-  padding: 1.8vw 3vw;
+  padding: 1vw 1.5vw;
   border-radius: 8px;
   border: none;
   outline: none;
-  font-size: 1.6vw;
+  color: rgb(96, 98, 99);
+  font-size: 1vw;
   font-weight: 700;
 }
 
 .inputt::placeholder {
-  font-size: 1.6vw;
+  font-size: 1.2vw;
   font-weight: 700;
-  color: rgba(138, 138, 138, 0.671);
+  color: rgba(58, 57, 57, 0.671);
 }
 
 .buttonn {
-  background-color: rgba(63, 92, 209, 0.96);
+  background-color: rgb(57, 88, 216);
   border: 0;
   display: flex;
   justify-content: center;
@@ -74,15 +111,21 @@
   gap: 2vw;
   color: white;
   border-radius: 50px;
-  font-size: 1.6vw;
+  border: 1px solid white;
+  font-size: 1.3vw;
   font-weight: 900;
-  width: 45%;
+  width: 40%;
   padding: 0.8vw 3vw;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.buttonn:hover {
+  border: 1px solid rgb(93, 108, 168);
 }
 
 .buttonn img {
-  width: 23%;
+  width: 20%;
 }
 
 .down {
@@ -95,7 +138,7 @@
 .down h3 {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
-  font-size: 1.4vw;
+  font-size: 0.8vw;
 }
 
 .down div {
@@ -104,26 +147,29 @@
 }
 
 .down img {
-  width: 1.7vw;
+  width: 1.1vw;
+  cursor: pointer;
 }
 
 /* Tablet View */
 @media (max-width: 768px) {
   .box {
-    padding: 5vw 3vw 2vw;
-    gap: 3vw;
+    padding: 5vw 3vw 15vw;
+    gap: 4vw;
     margin: 0vw 0vw 15vw;
   }
 
   .up {
-    gap: 3vw;
+    gap: 6vw;
+
     flex-direction: column;
   }
 
   .left {
     width: 100%;
     /* background: red; */
-    height: 15vh;
+    /* height: 15vh; */
+    margin-top: 2vw;
   }
 
   .left h1 {
@@ -134,11 +180,82 @@
     gap: 1vw;
   }
   .right h3 {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
   .right h4 {
     width: 100%;
-    font-size: 2.5vw;
+    font-size: 1.8vw;
+  }
+  .downarrow {
+    position: absolute;
+    right: 2%;
+    top: 25%;
+
+    width: 2vw;
+    height: 2vw;
+    border-left: 0.5vw solid white;
+    border-bottom: 0.5vw solid white;
+    transform: rotate(-45deg);
+    cursor: pointer;
+  }
+  .notes li {
+    list-style: none;
+    color: white;
+    font-size: 3vw;
+    margin: 0.7vw;
+    opacity: 0.7;
+    margin: 2vw 0;
+    letter-spacing: 0px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    max-height: 0;
+    overflow: hidden;
+    transition:all max-height 1s  ease;
+    padding: 0 15px;
+  }
+  .notesopen {
+    border-bottom: 1px solid all white;
+  }
+
+  .notesopen li {
+    list-style: none;
+
+    color: white;
+    font-size: 2.8vw;
+    margin: 0.7vw;
+    opacity: 0.7;
+    margin: 2vw 0;
+    letter-spacing: 0px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height  ease;
+    padding: 0 15px;
+  }
+  .notes {
+    margin-top: 2vw;
+    border-bottom: 1px solid white;
+    height: 7vw;
+  }
+
+  .notes li:hover {
+    opacity: 1;
+  }
+  .openertray {
+    /* background: #000; */
+    position: relative;
+  }
+  .openertray h2 {
+    font-size: 3.3vw;
+    letter-spacing: 1px;
+  }
+  .miniPoints div {
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1vw;
   }
 
   .formm {
@@ -190,22 +307,46 @@
   .box {
     padding: 5vw 3vw 2vw;
     gap: 3vw;
-    margin: 0vw 0vw 20vw;
+    margin: 0vw 0vw 50vw;
   }
 
   .up {
-    gap: 3vw;
+    gap: 2vw;
     flex-direction: column;
   }
-
+  .openertray {
+    padding: 1vw 0vw 1vw;
+    /* background: #000; */
+    position: relative;
+  }
+  .openertray h2 {
+    font-size: 4.5vw;
+    letter-spacing: 1px;
+  }
+  .notes {
+    border-bottom: 1px solid white;
+    /* background: red; */
+    height: 8vw;
+  }
   .left {
     width: 100%;
-    /* background: red; */
-    height: 15vh;
   }
 
   .left h1 {
     font-size: 6vw;
+    margin: 5vw 0;
+  }
+
+  .downarrow {
+    position: absolute;
+    right: 2%;
+    top: 25%;
+    width: 2vw;
+    height: 2vw;
+    border-left: 0.5vw solid white;
+    border-bottom: 0.5vw solid white;
+    transform: rotate(-45deg);
+    cursor: pointer;
   }
 
   .right {
@@ -218,13 +359,37 @@
     width: 100%;
     font-size: 2.5vw;
   }
+  .notes li {
+    list-style: none;
+    color: white;
+    /* background: #000; */
+    font-size: 2.8vw;
+    margin: 0.7vw;
+    opacity: 0.7;
+    margin: 2vw 0;
+    letter-spacing: 0px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .notes li:hover {
+    opacity: 1;
+  }
+
+  .miniPoints div {
+    /* background: red; */
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 4vw;
+    margin-bottom: 3vw;
+  }
 
   .formm {
     padding: 2vw 0vw;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    
   }
 
   .inputt {
